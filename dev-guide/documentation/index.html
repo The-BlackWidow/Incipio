@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="http://in6pio.github.io/Incipio/dev-guide/documentation/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Document your work - Incipio Docs</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">Incipio Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Accueil</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guide utilisateur <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../user-guide/install/">Installation</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../user-guide/first-use/">Premières Utiliations</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../user-guide/user-management/">Module gestion Associative</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guide développeur <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../git-workflow/">Git workflow</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../dev-environment/">VM for dev</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../dev-tools/">Configure your environment</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../coding-guidelines/">Coding guidelines</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../api/">API Documentation</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="./">Document your work</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li >
+                    <a rel="next" href="../api/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../../about/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/in6pio/Incipio.git">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#contributing-to-the-documentation">Contributing to the documentation</a></li>
+        
+            <li><a href="#install-and-use-mkdocs">Install and use Mkdocs</a></li>
+        
+            <li><a href="#documention-workflow">Documention workflow</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="contributing-to-the-documentation">Contributing to the documentation</h1>
+<p>One of the essential principle of incipio is that <strong>Documetation is as important as code</strong>. Incipio should be easy to use, to learn and to contribute.</p>
+<ul>
+<li>You sould considere that Incipio is written using <a href="https://confluence.atlassian.com/stash/markdown-syntax-guide-312740094.html">markdown synthax</a></li>
+<li>Incipio documentation is hosted on <a href="https://github.com/in6pio/Incipio/tree/master">GitHub</a></li>
+<li>Incipo documentation used <a href="http://www.mkdocs.org/">Mkdocs</a> to generate the static web site</li>
+<li>Incipio documentation is published under a specific branch <code>gh-pages</code> as a GitHub hosted website</li>
+</ul>
+<h2 id="install-and-use-mkdocs">Install and use Mkdocs</h2>
+<h3 id="install-mkdocs">Install Mkdocs</h3>
+<p>MkDocs need Python installed on yours system and <code>pip (Python package manager)</code></p>
+<ul>
+<li>Install Mkdocs</li>
+</ul>
+<pre><code>pip install mkdocs
+</code></pre>
+
+<ul>
+<li>Run Mkdocs</li>
+</ul>
+<pre><code>mkdocs serve
+</code></pre>
+
+<p>Open up <a href="">http://127.0.0.1:8000/</a> in your browser, and you'll see the index page being displayed</p>
+<h3 id="adding-pages">Adding pages</h3>
+<ul>
+<li>Create your <code>*.md</code> in the <code>docs/user-guide</code> or <code>docs/dev-guide</code> folder</li>
+<li>Edit <code>docs/index.md</code> to add your documantation to the table of content</li>
+<li>Edit <code>mkdocs.yml</code> if you want to include your page to the navigation header</li>
+</ul>
+<h2 id="documention-workflow">Documention workflow</h2>
+<p>Documentation contribution is based on github. See <a href="../git-workflow/">Git workflow</a>.
+It's great if your push code and documentation together.</p>
+<p>This is a small reminder :</p>
+<ul>
+<li>forked the official repository</li>
+<li>Clone the forked <a href="https://github.com/in6pio/Incipio/tree/master">Incipio/master</a> repository to your local machine</li>
+</ul>
+<pre><code>git clone https://github.com/&lt;YOUR GITHUB USERNAME&gt;/Incipio/master.git
+</code></pre>
+
+<ul>
+<li>Create a dedicated new branch for your changes.</li>
+</ul>
+<pre><code>git checkout -b improve_doc
+</code></pre>
+
+<ul>
+<li>Contribute to the documentation (and code).</li>
+<li>Push the changes to your forked repository.</li>
+</ul>
+<pre><code>git add .
+git commit -m &quot;&lt;YOUR MESSAGE&gt;&quot;
+git push origin improve_doc
+</code></pre>
+
+<ul>
+<li>Now, initiate a pull request</li>
+</ul>
+<pre><code>Go to your forked repository and click on the Pull Requests link
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center>Copyright &#169 2015 in6pio.</center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script src="../../js/base.js"></script>
+    </body>
+</html>

@@ -1,0 +1,239 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to Incipio\n\n\n\u00ab Incipio : Prendre en main, se mettre \u00e0 entreprendre, commencer \u00bb\n\n\nIncipio est un projet qui vise \u00e0 b\u00e2tir un \nERP\n communautaire et libre pour l\u2019ensemble des structures de type Junior-Entreprise, faisant partie ou non de la \nCNJE\n.\n\n\nSi vous souhaitez contribuer ou faire remonter un bug, n'h\u00e9sitez pas \u00e0 \nnous \u00e9crire un ticket ou une demande\n.\n\n\nGuide Utiliateur\n\n\n\n\nInstallation\n\n\nFirst user\n\n\nUser Management\n\n\n\n\nGuide D\u00e9veloppeur\n\n\n\n\nGit workflow\n\n\nVM for dev\n\n\nConfigure your environment\n\n\nCoding guidelines\n\n\nAPI Documentation\n\n\nDocument your work", 
+            "title": "Accueil"
+        }, 
+        {
+            "location": "/#welcome-to-incipio", 
+            "text": "\u00ab Incipio : Prendre en main, se mettre \u00e0 entreprendre, commencer \u00bb  Incipio est un projet qui vise \u00e0 b\u00e2tir un  ERP  communautaire et libre pour l\u2019ensemble des structures de type Junior-Entreprise, faisant partie ou non de la  CNJE .  Si vous souhaitez contribuer ou faire remonter un bug, n'h\u00e9sitez pas \u00e0  nous \u00e9crire un ticket ou une demande .", 
+            "title": "Welcome to Incipio"
+        }, 
+        {
+            "location": "/#guide-utiliateur", 
+            "text": "Installation  First user  User Management", 
+            "title": "Guide Utiliateur"
+        }, 
+        {
+            "location": "/#guide-developpeur", 
+            "text": "Git workflow  VM for dev  Configure your environment  Coding guidelines  API Documentation  Document your work", 
+            "title": "Guide D\u00e9veloppeur"
+        }, 
+        {
+            "location": "/user-guide/install/", 
+            "text": "Installation guide", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/user-guide/install/#installation-guide", 
+            "text": "", 
+            "title": "Installation guide"
+        }, 
+        {
+            "location": "/user-guide/first-use/", 
+            "text": "First use of Incipio\n\n\nWith this documentation you'll learn how to configure and how tu use Incipio ERP\n\n\nUser Management\n\n\nthis part will help you to create and configure user management module for a mandate. See more information in \nUser management guide module\n\n\nCreate and configure the first mandate\n\n\nConfigure Jobs\n\n\nAdd members and Csreate user account", 
+            "title": "Premi\u00e8res Utiliations"
+        }, 
+        {
+            "location": "/user-guide/first-use/#first-use-of-incipio", 
+            "text": "With this documentation you'll learn how to configure and how tu use Incipio ERP", 
+            "title": "First use of Incipio"
+        }, 
+        {
+            "location": "/user-guide/first-use/#user-management", 
+            "text": "this part will help you to create and configure user management module for a mandate. See more information in  User management guide module  Create and configure the first mandate  Configure Jobs  Add members and Csreate user account", 
+            "title": "User Management"
+        }, 
+        {
+            "location": "/user-guide/user-management/", 
+            "text": "User Management Module\n\n\nThis following Module has been built to provide you simple tools to :\n    * keep information member information\n    * Structure your organisation\n    * Manage ERP access right\n\n\nMembers\n\n\nJobs\n\n\nMandate", 
+            "title": "Module gestion Associative"
+        }, 
+        {
+            "location": "/user-guide/user-management/#user-management-module", 
+            "text": "This following Module has been built to provide you simple tools to :\n    * keep information member information\n    * Structure your organisation\n    * Manage ERP access right", 
+            "title": "User Management Module"
+        }, 
+        {
+            "location": "/user-guide/user-management/#members", 
+            "text": "", 
+            "title": "Members"
+        }, 
+        {
+            "location": "/user-guide/user-management/#jobs", 
+            "text": "", 
+            "title": "Jobs"
+        }, 
+        {
+            "location": "/user-guide/user-management/#mandate", 
+            "text": "", 
+            "title": "Mandate"
+        }, 
+        {
+            "location": "/dev-guide/git-workflow/", 
+            "text": "Git Workflow: triangular workflow\n\n\nYou do not have the rights to directly write on the project. Hence if you wish to push some code, the best thing to do is to \nfork\n the project. Once done, you will have a copy of the the repository \nin6pio/Incipio\n to your own namespace, with write access.\n\n\nOn your fork, you can develop and do changes as you wish. We recommend you to do your modifications in separate branches so that you can keep the original branches up to date with the original repository.\n\n\nIf you are not used to this kind of workflow, do not worry, everything is detailed below!\n\n\n\n\nFork Incipio\n\n\nNothing easier than that: go to the \nin6pio/Incipio repository\n and then clic on the \nfork\n button ;)\n\n\nFor more, check \nGitHub guide: forking projects\n.\n\n\n\n\nKeep your fork up to date\n\n\nFirst, clone your fork!\n\n\nHere it becomes a little bit trickier if you never did it. With your fork, you can do your changes as you like it will not affect the original repository. However, sometimes changes may happen on the original repository and you want to keep your fork up to date so that you can develop with the latest work. To achieve that, you have to configure the \ntracked repositories\n.\n\n\nTo see which repositories are tracked, use \ngit remote -v\n. The current result should be something like:\n\n\norigin  git@github.com:yourNameSpace/Incipio.git (fetch)\norigin  git@github.com:yourNameSpace/Incipio.git (push)\n\n\n\n\nNow, add the original repository to tracked repositories: \ngit remote add upstream git@github.com:in6pio/Incipio.git\n. Now if you do \ngit remote -v\n again you should have:\n\n\norigin  git@github.com:yourNameSpace/Incipio.git (fetch)\norigin  git@github.com:yourNameSpace/Incipio.git (push)\nupstream    git@github.com:in6pio/Incipio.git (fetch)\nupstream    git@github.com:in6pio/Incipio.git (push)\n\n\n\n\nThat's it! Now, if you wish to update your repository, you can do:\n\n\n\n\ngit fetch upstream\n: get the updates from the original repository.\n\n\ngit fetch origin\n: get the updates of your remote repository (the fork).\n\n\n\n\nSource: \nGitHub: syncing a fork\n\n\nDevelop\n\n\nIt is highly recommended to use the development environment provided to develop. If you want more information on it, check \nthis link\n.\n\n\nIf you wish to properly keep your fork up to date, do not touch the original branches like \nmaster\n!\n\n\nNow let's start. It is assumed that your repository is up to date. Create your branch \nfeatureName\n (the branch name has really no importance, you will be the only one to use it) from the \ndev\n branch:\n\n\ngit checkout origin/dev     # You are now on your remote branch `dev`\ngit checkout -b featureName # You are now on the branch featureName\n\n\n\n\nNow you can start to code. Do not forget to follow the \nproject contributing guidelines\n!\n\n\nSubmit your work\n\n\nIt is assumed that you have your latest work that you wish to submit pushed on the branch \nfeatureName\n on your fork. Before submitting your work, first check that your work following the project standards. Then, to clean your work, do not forget to \nrebase it first\n. Why? To ensure your work integrates the latests commits of the original repository and ease the merge! Never did that? Then do the following:\n\n\nGo on your branch \nfeatureName\n.\n\n\nUpdate your local repository:\n\n\ngit fetch upstream\ngit fetch origin\ngit pull featureName\n\n\n\n\nRebase your work:\n\n\ngit rebase upstream/dev\n\n\n\n\nSolve the conflicts, and only the conflicts, nothing else! To do so, check the conflicted files. Once this is done, do:\n\n\ngit add -A\ngit rebase --continue\n\n\n\n\nAnd to that until the rebase is successful :)\n\n\nNow repush your work. You will probably need to do a force push.\n\n\nGood! Now you can do a \npull request\n with the original repository on the \ndev\n branch (\nin6pio:dev\n) as a \nbase\n and your fork branch as \nHEAD\n (\nyourNameSpace:featureName\n).\n\n\nFor more\n\n\n\n\nLearn Git with pcottle\n\n\nBien utiliser \ngit merge\n et \ngit rebase\n\n\nGetting solid at \ngit rebase\n and \ngit merge\n\n\nHow to undo almost anything with Git\n\n\n\n\nLast be not the least, if you feel uncomfortable with Git in command lines, checkout:\n\n\n\n\nGit GUI clients\n\n\nungit\n\n\n\n\nGood coding!\n\n\nSources\n\n\n\n\nGit Workflows For Successful Deployment\n - Matt Surabian (\nbocoup\n) | May 07, 2015\n\n\nGit Best Practices: Workflow Guidelines\n - Andrew Berry (\nLullabot\n) | June 14, 2012\n\n\nGitHub Flow\n - Scott Chacon | August 31, 2011\n\n\nA successful Git branching model\n - Vincent Driessen | January 05, 2010\n\n\nPractical Git: A Workflow to Preserve Your Sanity\n - Keith D Gregory\n\n\nUnderstanding the Git Workflow\n - Ben Sandofsky\n\n\nGit Workflows That Work\n - Spencer Christensen | May 2, 2014\n\n\nGit branch strategy for small dev team\n - Bilal and Olga | March 11, 2010\n\n\nGit Branching - Branching Workflows\n - Git official doc\n\n\nComparing Workflows\n - \nAtlassian\n\n\nGit Workflow in Invenio\n - \nInvenio", 
+            "title": "Git workflow"
+        }, 
+        {
+            "location": "/dev-guide/git-workflow/#git-workflow-triangular-workflow", 
+            "text": "You do not have the rights to directly write on the project. Hence if you wish to push some code, the best thing to do is to  fork  the project. Once done, you will have a copy of the the repository  in6pio/Incipio  to your own namespace, with write access.  On your fork, you can develop and do changes as you wish. We recommend you to do your modifications in separate branches so that you can keep the original branches up to date with the original repository.  If you are not used to this kind of workflow, do not worry, everything is detailed below!", 
+            "title": "Git Workflow: triangular workflow"
+        }, 
+        {
+            "location": "/dev-guide/git-workflow/#fork-incipio", 
+            "text": "Nothing easier than that: go to the  in6pio/Incipio repository  and then clic on the  fork  button ;)  For more, check  GitHub guide: forking projects .", 
+            "title": "Fork Incipio"
+        }, 
+        {
+            "location": "/dev-guide/git-workflow/#keep-your-fork-up-to-date", 
+            "text": "First, clone your fork!  Here it becomes a little bit trickier if you never did it. With your fork, you can do your changes as you like it will not affect the original repository. However, sometimes changes may happen on the original repository and you want to keep your fork up to date so that you can develop with the latest work. To achieve that, you have to configure the  tracked repositories .  To see which repositories are tracked, use  git remote -v . The current result should be something like:  origin  git@github.com:yourNameSpace/Incipio.git (fetch)\norigin  git@github.com:yourNameSpace/Incipio.git (push)  Now, add the original repository to tracked repositories:  git remote add upstream git@github.com:in6pio/Incipio.git . Now if you do  git remote -v  again you should have:  origin  git@github.com:yourNameSpace/Incipio.git (fetch)\norigin  git@github.com:yourNameSpace/Incipio.git (push)\nupstream    git@github.com:in6pio/Incipio.git (fetch)\nupstream    git@github.com:in6pio/Incipio.git (push)  That's it! Now, if you wish to update your repository, you can do:   git fetch upstream : get the updates from the original repository.  git fetch origin : get the updates of your remote repository (the fork).   Source:  GitHub: syncing a fork", 
+            "title": "Keep your fork up to date"
+        }, 
+        {
+            "location": "/dev-guide/git-workflow/#develop", 
+            "text": "It is highly recommended to use the development environment provided to develop. If you want more information on it, check  this link .  If you wish to properly keep your fork up to date, do not touch the original branches like  master !  Now let's start. It is assumed that your repository is up to date. Create your branch  featureName  (the branch name has really no importance, you will be the only one to use it) from the  dev  branch:  git checkout origin/dev     # You are now on your remote branch `dev`\ngit checkout -b featureName # You are now on the branch featureName  Now you can start to code. Do not forget to follow the  project contributing guidelines !", 
+            "title": "Develop"
+        }, 
+        {
+            "location": "/dev-guide/git-workflow/#submit-your-work", 
+            "text": "It is assumed that you have your latest work that you wish to submit pushed on the branch  featureName  on your fork. Before submitting your work, first check that your work following the project standards. Then, to clean your work, do not forget to  rebase it first . Why? To ensure your work integrates the latests commits of the original repository and ease the merge! Never did that? Then do the following:  Go on your branch  featureName .  Update your local repository:  git fetch upstream\ngit fetch origin\ngit pull featureName  Rebase your work:  git rebase upstream/dev  Solve the conflicts, and only the conflicts, nothing else! To do so, check the conflicted files. Once this is done, do:  git add -A\ngit rebase --continue  And to that until the rebase is successful :)  Now repush your work. You will probably need to do a force push.  Good! Now you can do a  pull request  with the original repository on the  dev  branch ( in6pio:dev ) as a  base  and your fork branch as  HEAD  ( yourNameSpace:featureName ).", 
+            "title": "Submit your work"
+        }, 
+        {
+            "location": "/dev-guide/git-workflow/#for-more", 
+            "text": "Learn Git with pcottle  Bien utiliser  git merge  et  git rebase  Getting solid at  git rebase  and  git merge  How to undo almost anything with Git   Last be not the least, if you feel uncomfortable with Git in command lines, checkout:   Git GUI clients  ungit   Good coding!", 
+            "title": "For more"
+        }, 
+        {
+            "location": "/dev-guide/git-workflow/#sources", 
+            "text": "Git Workflows For Successful Deployment  - Matt Surabian ( bocoup ) | May 07, 2015  Git Best Practices: Workflow Guidelines  - Andrew Berry ( Lullabot ) | June 14, 2012  GitHub Flow  - Scott Chacon | August 31, 2011  A successful Git branching model  - Vincent Driessen | January 05, 2010  Practical Git: A Workflow to Preserve Your Sanity  - Keith D Gregory  Understanding the Git Workflow  - Ben Sandofsky  Git Workflows That Work  - Spencer Christensen | May 2, 2014  Git branch strategy for small dev team  - Bilal and Olga | March 11, 2010  Git Branching - Branching Workflows  - Git official doc  Comparing Workflows  -  Atlassian  Git Workflow in Invenio  -  Invenio", 
+            "title": "Sources"
+        }, 
+        {
+            "location": "/dev-guide/dev-environment/", 
+            "text": "Development Environment\n\n\nThe purpose of this environment is to ease the development process. We preconfigured a Virtual Machine just for you. The only thing you have to do is to install the requirements and the deployment will be done with only one command. Of course, \nusing this development environment is by no means mandatory\n.\n\n\nRequirements\n\n\n\n\nVagrant\n\n\nAnsible\n\n\n\n\nGetting started\n\n\nInstall\n\n\n\n\nInstall the requirements\n\n\nInstall the Vagrant box: \nvagrant box add jessie http://static.gender-api.com/debian-8-jessie-rc2-x64-slim.box --provider virtualbox\n\n\nStart the Vagrant VM: \nvagrant up\n\n\n\n\nIf the provision fails, you can try to run ad hoc Ansible commands with a greater verbosity:\n\n\nansible-playbook -i .vagrant/machines/default/virtualbox/action_provision --private-key=~/.vagrant.d/insecure_private_key -u vagrant ansible/playbook.yml -vvvv\n\n\n\n\nUsage\n\n\n\n\nHTTP access: \nlocalhost:8080\n\n\nSSH access: \nvagrant ssh\n\n\nMySQL access:\n\n\nuser : \nroot\n\n\nno password\n\n\nremote access: specify \n127.0.0.1\n as host (port \n3307\n) (requires MySQL client)\n\n\n\n\n\n\nredis access:\n\n\nremote access allowed (requires redis client)\n\n\nhost: \n127.0.0.1\n\n\nport: \n6379\n\n\n\n\n\n\n\n\nIf you wish to reload configuration: \nvagrant provision\n\n\nIf you need to execute a root command, you can either use \nsudo\n or login as root the root user with \nsu\n (password:\n\nvagrant\n).\n\n\nIf you wish to change the port used because they overlap with already used ports or whatever your reason is, check\nthe configuration in the \nVagrantfile\n.\n\n\nDefault configuration\n\n\nThe VM container is configured via Ansible:\n\n\n\n\nLatest version of \nJessie\n (Debian 8)\n\n\nWget\n \n \ncURL\n\n\nnginx\n\n\nGit\n\n\n\n\nPHP Environment:\n\n\n\n\nPHP5.6\n\n\nPHP CLI\n\n\nPHP5 FPM\n\n\nPear\n\n\nComposer\n\n\nMcrypt\n\n\nXdebug\n\n\nPsySH\n\n\n\n\nDatabases:\n\n\n\n\nRedis\n\n\nMySQL\n\n\n\n\nGit:\n\n\n\n\nAliases\n\n\nDefault push method set to \ncurrent\n\n\nGlobal gitignore preconfigured to ignore \nlinux\n, \nintelliJ\n, \nNetBeans\n and \nEclipse\n files\n\n\nFor more: \ngit config --global --list\n\n\n\n\nShell aliases: run \nalias\n to see the available aliases.\n\n\nKnown bugs\n\n\nIt is possible that the update of the system and the composer install takes very long. For the later, you can drop the task and run it manually it usually takes less time and at least you have an idea of the progress. If you do so, you will have to run manually the tasks which have been configured after this command. Hopefully, it is just creating the database or updating it ;)", 
+            "title": "VM for dev"
+        }, 
+        {
+            "location": "/dev-guide/dev-environment/#development-environment", 
+            "text": "The purpose of this environment is to ease the development process. We preconfigured a Virtual Machine just for you. The only thing you have to do is to install the requirements and the deployment will be done with only one command. Of course,  using this development environment is by no means mandatory .  Requirements   Vagrant  Ansible", 
+            "title": "Development Environment"
+        }, 
+        {
+            "location": "/dev-guide/dev-environment/#getting-started", 
+            "text": "", 
+            "title": "Getting started"
+        }, 
+        {
+            "location": "/dev-guide/dev-environment/#install", 
+            "text": "Install the requirements  Install the Vagrant box:  vagrant box add jessie http://static.gender-api.com/debian-8-jessie-rc2-x64-slim.box --provider virtualbox  Start the Vagrant VM:  vagrant up   If the provision fails, you can try to run ad hoc Ansible commands with a greater verbosity:  ansible-playbook -i .vagrant/machines/default/virtualbox/action_provision --private-key=~/.vagrant.d/insecure_private_key -u vagrant ansible/playbook.yml -vvvv", 
+            "title": "Install"
+        }, 
+        {
+            "location": "/dev-guide/dev-environment/#usage", 
+            "text": "HTTP access:  localhost:8080  SSH access:  vagrant ssh  MySQL access:  user :  root  no password  remote access: specify  127.0.0.1  as host (port  3307 ) (requires MySQL client)    redis access:  remote access allowed (requires redis client)  host:  127.0.0.1  port:  6379     If you wish to reload configuration:  vagrant provision  If you need to execute a root command, you can either use  sudo  or login as root the root user with  su  (password: vagrant ).  If you wish to change the port used because they overlap with already used ports or whatever your reason is, check\nthe configuration in the  Vagrantfile .", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/dev-guide/dev-environment/#default-configuration", 
+            "text": "The VM container is configured via Ansible:   Latest version of  Jessie  (Debian 8)  Wget     cURL  nginx  Git   PHP Environment:   PHP5.6  PHP CLI  PHP5 FPM  Pear  Composer  Mcrypt  Xdebug  PsySH   Databases:   Redis  MySQL   Git:   Aliases  Default push method set to  current  Global gitignore preconfigured to ignore  linux ,  intelliJ ,  NetBeans  and  Eclipse  files  For more:  git config --global --list   Shell aliases: run  alias  to see the available aliases.", 
+            "title": "Default configuration"
+        }, 
+        {
+            "location": "/dev-guide/dev-environment/#known-bugs", 
+            "text": "It is possible that the update of the system and the composer install takes very long. For the later, you can drop the task and run it manually it usually takes less time and at least you have an idea of the progress. If you do so, you will have to run manually the tasks which have been configured after this command. Hopefully, it is just creating the database or updating it ;)", 
+            "title": "Known bugs"
+        }, 
+        {
+            "location": "/dev-guide/dev-tools/", 
+            "text": "phpStorm for Symfony\n\n\npre-commit hook\n\n\nconfiguration de git\n\n\nalias Git\n\n\nbash autocomplete\n\n\naliases\n\n\nsymfony command autocomplete\n\n\nPHPCS\n\n\nPHPMD\n\n\n\n\nPHP-CS Fixer\n\n\nPHP-CS Fixer\n follow the PHP coding standards as defined in the \nPSR-1\n and \nPSR-2\n documents. It fixes all the issues of your code to comply to those standards.\n\n\nTo use it, simply run: \ncomposer php-cs-fixer\n or \ncomposer phpcsf\n.\n\n\nPostman\n\n\nTo test the API, there is no better tool than \nPostman\n. It is a simple application allowing you to easily request the API.\n\n\nTo help you with Postman, a configuration has been exported with all the documentation! Once you have installed Postman, import the collection \npostman_collection\n and the environment \npostman_environment\n. The Postman collection show you all the available requests and the environment allow you to configure the variable \nhost\n.", 
+            "title": "Configure your environment"
+        }, 
+        {
+            "location": "/dev-guide/dev-tools/#php-cs-fixer", 
+            "text": "PHP-CS Fixer  follow the PHP coding standards as defined in the  PSR-1  and  PSR-2  documents. It fixes all the issues of your code to comply to those standards.  To use it, simply run:  composer php-cs-fixer  or  composer phpcsf .", 
+            "title": "PHP-CS Fixer"
+        }, 
+        {
+            "location": "/dev-guide/dev-tools/#postman", 
+            "text": "To test the API, there is no better tool than  Postman . It is a simple application allowing you to easily request the API.  To help you with Postman, a configuration has been exported with all the documentation! Once you have installed Postman, import the collection  postman_collection  and the environment  postman_environment . The Postman collection show you all the available requests and the environment allow you to configure the variable  host .", 
+            "title": "Postman"
+        }, 
+        {
+            "location": "/dev-guide/coding-guidelines/", 
+            "text": "Coding Guidelines\n\n\nPHP\n\n\n\n\nPSR-1\n\n\nPSR-2\n\n\nEntities must implement the \nFluent Interface\n\n\nUse \nYoda conditions\n\n\nDo not use \nis_null($vars)\n but test the actual value \nnull === $vars\n\n\nDo not use \n!\n for the NOT expression in conditional expressions but use \nfalse\n instead:\n\n\n\n\n// Wrong\nif (!$expr) {\n    ...\n}\n\n// Good\nif (false === $expr)\u00a0{\n    ...\n}\n\n\n\n\n\n\n\n\nSymfony conventions\n\n\n\n\nSymfony Conventions\n\n\nCoding Standards\n\n\nBest practices\n\n\n\n\n\n\n\n\nAnnotations\n\n\n\n\nVocabulary: check \nlexicon\n\n\n\n\nFront-End\n\n\n\n\nOOCSS\n\n\nSMACSS", 
+            "title": "Coding guidelines"
+        }, 
+        {
+            "location": "/dev-guide/coding-guidelines/#coding-guidelines", 
+            "text": "", 
+            "title": "Coding Guidelines"
+        }, 
+        {
+            "location": "/dev-guide/coding-guidelines/#php", 
+            "text": "PSR-1  PSR-2  Entities must implement the  Fluent Interface  Use  Yoda conditions  Do not use  is_null($vars)  but test the actual value  null === $vars  Do not use  !  for the NOT expression in conditional expressions but use  false  instead:   // Wrong\nif (!$expr) {\n    ...\n}\n\n// Good\nif (false === $expr)\u00a0{\n    ...\n}    Symfony conventions   Symfony Conventions  Coding Standards  Best practices     Annotations   Vocabulary: check  lexicon", 
+            "title": "PHP"
+        }, 
+        {
+            "location": "/dev-guide/coding-guidelines/#front-end", 
+            "text": "OOCSS  SMACSS", 
+            "title": "Front-End"
+        }, 
+        {
+            "location": "/dev-guide/api/", 
+            "text": "API\n\n\nIntroduction\n\n\nThe API is based on \nDunglasApiBundle\n to generate a beautiful JSON-LD REST API with Hydra markups, if you do not know what it is about, check the bundle documentation it provides all the necessary links :).\n\n\nThe API follow the standard REST API guidelines, the specifications described bellow are more specific to a Symfony API or the use of the \nDunglasApiBundle\n bundle.\n\n\nContexts\n\n\nIf you make a request, you will find in the response a property \n@context\n with a URI. Contexts are an API endpoint where the properties of the entity are detailed.\n\n\nFor instance, if you have the following response:\n\n\n{\n    \n@context\n: \n\\/api\\/contexts\\/ConstraintViolationList\n,\n    \n@type\n: \nConstraintViolationList\n,\n    ...\n}\n\n\n\n\nIt means that if you request \n/api/contexts/ConstraintViolationList\n, you will get all the properties and methods of the entity \nConstraintViolationList\n:\n\n\n{\n    \n@context\n: {\n        \n@vocab\n:\nhttp:\\/\\/localhost:8080\\/api\\/vocab#\n,\n        \nhydra\n:\nhttp:\\/\\/www.w3.org\\/ns\\/hydra\\/core#\n\n    }\n}\n\n\n\n\nWhat the ****?!! Hey no panic! See the \n@vocab\n property? It tells you that what we are looking for is not here but gives the path to it. So let's request \n/api/vocab\n:\n\n\n{\n    ...\n    \nhydra:supportedClass\n: [\n        ...\n        {\n            \n@id\n: \n#ConstraintViolationList\n,\n            \n@type\n: \nhydra:Class\n,\n            \nsubClassOf\n: \nhydra:Error\n,\n            \nhydra:title\n: \nA constraint violation list\n,\n            \nhydra:supportedProperty\n: [\n                {\n                    \n@type\n: \nhydra:SupportedProperty\n,\n                    \nhydra:property\n: {\n                        \n@id\n: \n#ConstraintViolationList\\/violation\n,\n                        \n@type\n: \nrdf:Property\n,\n                        \nrdfs:label\n: \nviolation\n,\n                        \ndomain\n: \n#ConstraintViolationList\n,\n                        \nrange\n: \n#ConstraintViolation\n\n                    },\n                    \nhydra:title\n: \nviolation\n,\n                    \nhydra:description\n: \nThe violations\n,\n                    \nhydra:readable\n: true,\n                    \nhydra:writable\n: false\n                }\n            ]\n        },\n        ...\n    ]\n    ...\n}\n\n\n\n\nFrom it we can see that the \nConstraintViolationList\n has \nConstraintViolation\n properties, which is itself describe in this \nvocab\n file. Tedious? Hell yeah! That's why you can use \nHydraConsole\n, it does the job for you!\n\n\nStill, if you are looking for the details of a class, in our case, start to look in the \nvocab\n first. If you do not like it, you can try to look the phpDoc.\n\n\nFilters\n\n\nFilters are applied on a given \nurl\n by adding \n?filter1\nfilter2\n at the end, which gives the following URL: \nurl?filter1\nfilter2\n.\n\n\nThe mechanism of filter is quite common although different implementations are possible. The available filters are given below. When a filter will be available for an API endpoint, \nyou will find on which parameters you can use the filters in the \nPostman documentation\n.\n\n\nThe filters used are the ones provided by \nLoopBackApiBundle\n.\n\n\nFields validation\n\n\nWhen you try to update or create a resource, some constraints may be applied to the form. In this case, a \n400\n response is returned with a \nConstraintViolationList\n entity. All violations are found in the \nviolations\n property and each object are an instance of \nConstraintViolation\n (cf. \nvocab\n).", 
+            "title": "API Documentation"
+        }, 
+        {
+            "location": "/dev-guide/api/#api", 
+            "text": "", 
+            "title": "API"
+        }, 
+        {
+            "location": "/dev-guide/api/#introduction", 
+            "text": "The API is based on  DunglasApiBundle  to generate a beautiful JSON-LD REST API with Hydra markups, if you do not know what it is about, check the bundle documentation it provides all the necessary links :).  The API follow the standard REST API guidelines, the specifications described bellow are more specific to a Symfony API or the use of the  DunglasApiBundle  bundle.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/dev-guide/api/#contexts", 
+            "text": "If you make a request, you will find in the response a property  @context  with a URI. Contexts are an API endpoint where the properties of the entity are detailed.  For instance, if you have the following response:  {\n     @context :  \\/api\\/contexts\\/ConstraintViolationList ,\n     @type :  ConstraintViolationList ,\n    ...\n}  It means that if you request  /api/contexts/ConstraintViolationList , you will get all the properties and methods of the entity  ConstraintViolationList :  {\n     @context : {\n         @vocab : http:\\/\\/localhost:8080\\/api\\/vocab# ,\n         hydra : http:\\/\\/www.w3.org\\/ns\\/hydra\\/core# \n    }\n}  What the ****?!! Hey no panic! See the  @vocab  property? It tells you that what we are looking for is not here but gives the path to it. So let's request  /api/vocab :  {\n    ...\n     hydra:supportedClass : [\n        ...\n        {\n             @id :  #ConstraintViolationList ,\n             @type :  hydra:Class ,\n             subClassOf :  hydra:Error ,\n             hydra:title :  A constraint violation list ,\n             hydra:supportedProperty : [\n                {\n                     @type :  hydra:SupportedProperty ,\n                     hydra:property : {\n                         @id :  #ConstraintViolationList\\/violation ,\n                         @type :  rdf:Property ,\n                         rdfs:label :  violation ,\n                         domain :  #ConstraintViolationList ,\n                         range :  #ConstraintViolation \n                    },\n                     hydra:title :  violation ,\n                     hydra:description :  The violations ,\n                     hydra:readable : true,\n                     hydra:writable : false\n                }\n            ]\n        },\n        ...\n    ]\n    ...\n}  From it we can see that the  ConstraintViolationList  has  ConstraintViolation  properties, which is itself describe in this  vocab  file. Tedious? Hell yeah! That's why you can use  HydraConsole , it does the job for you!  Still, if you are looking for the details of a class, in our case, start to look in the  vocab  first. If you do not like it, you can try to look the phpDoc.", 
+            "title": "Contexts"
+        }, 
+        {
+            "location": "/dev-guide/api/#filters", 
+            "text": "Filters are applied on a given  url  by adding  ?filter1 filter2  at the end, which gives the following URL:  url?filter1 filter2 .  The mechanism of filter is quite common although different implementations are possible. The available filters are given below. When a filter will be available for an API endpoint,  you will find on which parameters you can use the filters in the  Postman documentation .  The filters used are the ones provided by  LoopBackApiBundle .", 
+            "title": "Filters"
+        }, 
+        {
+            "location": "/dev-guide/api/#fields-validation", 
+            "text": "When you try to update or create a resource, some constraints may be applied to the form. In this case, a  400  response is returned with a  ConstraintViolationList  entity. All violations are found in the  violations  property and each object are an instance of  ConstraintViolation  (cf.  vocab ).", 
+            "title": "Fields validation"
+        }, 
+        {
+            "location": "/dev-guide/documentation/", 
+            "text": "Contributing to the documentation\n\n\nOne of the essential principle of incipio is that \nDocumetation is as important as code\n. Incipio should be easy to use, to learn and to contribute.\n\n\n\n\nYou sould considere that Incipio is written using \nmarkdown synthax\n\n\nIncipio documentation is hosted on \nGitHub\n\n\nIncipo documentation used \nMkdocs\n to generate the static web site\n\n\nIncipio documentation is published under a specific branch \ngh-pages\n as a GitHub hosted website\n\n\n\n\nInstall and use Mkdocs\n\n\nInstall Mkdocs\n\n\nMkDocs need Python installed on yours system and \npip (Python package manager)\n\n\n\n\nInstall Mkdocs\n\n\n\n\npip install mkdocs\n\n\n\n\n\n\nRun Mkdocs\n\n\n\n\nmkdocs serve\n\n\n\n\nOpen up \nhttp://127.0.0.1:8000/\n in your browser, and you'll see the index page being displayed\n\n\nAdding pages\n\n\n\n\nCreate your \n*.md\n in the \ndocs/user-guide\n or \ndocs/dev-guide\n folder\n\n\nEdit \ndocs/index.md\n to add your documantation to the table of content\n\n\nEdit \nmkdocs.yml\n if you want to include your page to the navigation header\n\n\n\n\nDocumention workflow\n\n\nDocumentation contribution is based on github. See \nGit workflow\n.\nIt's great if your push code and documentation together.\n\n\nThis is a small reminder :\n\n\n\n\nforked the official repository\n\n\nClone the forked \nIncipio/master\n repository to your local machine\n\n\n\n\ngit clone https://github.com/\nYOUR GITHUB USERNAME\n/Incipio/master.git\n\n\n\n\n\n\nCreate a dedicated new branch for your changes.\n\n\n\n\ngit checkout -b improve_doc\n\n\n\n\n\n\nContribute to the documentation (and code).\n\n\nPush the changes to your forked repository.\n\n\n\n\ngit add .\ngit commit -m \nYOUR MESSAGE\n\ngit push origin improve_doc\n\n\n\n\n\n\nNow, initiate a pull request\n\n\n\n\nGo to your forked repository and click on the Pull Requests link", 
+            "title": "Document your work"
+        }, 
+        {
+            "location": "/dev-guide/documentation/#contributing-to-the-documentation", 
+            "text": "One of the essential principle of incipio is that  Documetation is as important as code . Incipio should be easy to use, to learn and to contribute.   You sould considere that Incipio is written using  markdown synthax  Incipio documentation is hosted on  GitHub  Incipo documentation used  Mkdocs  to generate the static web site  Incipio documentation is published under a specific branch  gh-pages  as a GitHub hosted website", 
+            "title": "Contributing to the documentation"
+        }, 
+        {
+            "location": "/dev-guide/documentation/#install-and-use-mkdocs", 
+            "text": "Install Mkdocs  MkDocs need Python installed on yours system and  pip (Python package manager)   Install Mkdocs   pip install mkdocs   Run Mkdocs   mkdocs serve  Open up  http://127.0.0.1:8000/  in your browser, and you'll see the index page being displayed  Adding pages   Create your  *.md  in the  docs/user-guide  or  docs/dev-guide  folder  Edit  docs/index.md  to add your documantation to the table of content  Edit  mkdocs.yml  if you want to include your page to the navigation header", 
+            "title": "Install and use Mkdocs"
+        }, 
+        {
+            "location": "/dev-guide/documentation/#documention-workflow", 
+            "text": "Documentation contribution is based on github. See  Git workflow .\nIt's great if your push code and documentation together.  This is a small reminder :   forked the official repository  Clone the forked  Incipio/master  repository to your local machine   git clone https://github.com/ YOUR GITHUB USERNAME /Incipio/master.git   Create a dedicated new branch for your changes.   git checkout -b improve_doc   Contribute to the documentation (and code).  Push the changes to your forked repository.   git add .\ngit commit -m  YOUR MESSAGE \ngit push origin improve_doc   Now, initiate a pull request   Go to your forked repository and click on the Pull Requests link", 
+            "title": "Documention workflow"
+        }, 
+        {
+            "location": "/about/", 
+            "text": "", 
+            "title": "About"
+        }
+    ]
+}

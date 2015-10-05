@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/travis/build/in6pio/Incipio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/nv.d3.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">/home/travis/build/in6pio/Incipio</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#29">UserController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#28">MandateController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/DataTransformer/MandateDateTransformer.php.html#29">MandateDateTransformer</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/Type/JobFilteringType.php.html#22">JobFilteringType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/Type/MandateType.php.html#21">MandateType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/Type/JobType.php.html#20">JobType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="features/bootstrap/Tests/UtilsTest.php.html#21">UtilsTest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#29">JobController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#8">Address</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="features/bootstrap/Utils/Utils.php.html#19">Utils</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/DashboardController.php.html#25">DashboardController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/StudentConvention.php.html#18">StudentConvention</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/BaseController.php.html#32">BaseController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#36">User</a></td><td class="text-right">48%</td></tr>
+       <tr><td><a href="src/FrontBundle/Menu/MenuBuilder.php.html#23">MenuBuilder</a></td><td class="text-right">53%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#29">UserController</a></td><td class="text-right">1560</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#29">JobController</a></td><td class="text-right">1482</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#28">MandateController</a></td><td class="text-right">992</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/BaseController.php.html#32">BaseController</a></td><td class="text-right">650</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#36">User</a></td><td class="text-right">145</td></tr>
+       <tr><td><a href="features/bootstrap/Utils/Utils.php.html#19">Utils</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/DataTransformer/MandateDateTransformer.php.html#29">MandateDateTransformer</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/FrontBundle/Menu/MenuBuilder.php.html#23">MenuBuilder</a></td><td class="text-right">12</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#42"><abbr title="MandateController::indexAction">indexAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#66"><abbr title="MandateController::newAction">newAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#400"><abbr title="JobController::getMandates">getMandates</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#384"><abbr title="JobController::createJobFilteringForm">createJobFilteringForm</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#370"><abbr title="JobController::createDeleteForm">createDeleteForm</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#111"><abbr title="MandateController::showAction">showAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#155"><abbr title="MandateController::editAction">editAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#324"><abbr title="MandateController::createEditForm">createEditForm</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#304"><abbr title="MandateController::createNewForm">createNewForm</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#261"><abbr title="MandateController::deleteAction">deleteAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#197"><abbr title="MandateController::updateAction">updateAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#349"><abbr title="JobController::createEditForm">createEditForm</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#327"><abbr title="JobController::createNewForm">createNewForm</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/DashboardController.php.html#37"><abbr title="DashboardController::indexAction">indexAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/BaseController.php.html#196"><abbr title="BaseController::getEntitiesFromCollection">getEntitiesFromCollection</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/BaseController.php.html#120"><abbr title="BaseController::handleGuzzleException">handleGuzzleException</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/BaseController.php.html#103"><abbr title="BaseController::sendAndDecode">sendAndDecode</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#43"><abbr title="JobController::indexAction">indexAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#89"><abbr title="JobController::newAction">newAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#284"><abbr title="JobController::deleteAction">deleteAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#219"><abbr title="JobController::updateAction">updateAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#174"><abbr title="JobController::editAction">editAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#132"><abbr title="JobController::showAction">showAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#345"><abbr title="MandateController::createDeleteForm">createDeleteForm</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#43"><abbr title="UserController::indexAction">indexAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/Type/JobType.php.html#30"><abbr title="JobType::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/Type/JobFilteringType.php.html#59"><abbr title="JobFilteringType::getName">getName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/Type/JobFilteringType.php.html#40"><abbr title="JobFilteringType::buildForm">buildForm</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/Type/JobFilteringType.php.html#32"><abbr title="JobFilteringType::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/Type/JobType.php.html#39"><abbr title="JobType::buildForm">buildForm</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/Type/JobType.php.html#78"><abbr title="JobType::getName">getName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Menu/MenuBuilder.php.html#126"><abbr title="MenuBuilder::createUserMenu">createUserMenu</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/Type/UserType.php.html#124"><abbr title="UserType::onPreSetData">onPreSetData</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/Type/MandateType.php.html#77"><abbr title="MandateType::getName">getName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/Type/MandateType.php.html#27"><abbr title="MandateType::buildForm">buildForm</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/DataTransformer/MandateDateTransformer.php.html#64"><abbr title="MandateDateTransformer::reverseTransform">reverseTransform</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/DataTransformer/MandateDateTransformer.php.html#50"><abbr title="MandateDateTransformer::transform">transform</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#231"><abbr title="UserController::updateAction">updateAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#189"><abbr title="UserController::editAction">editAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#145"><abbr title="UserController::showAction">showAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#93"><abbr title="UserController::newAction">newAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#292"><abbr title="UserController::deleteAction">deleteAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#335"><abbr title="UserController::createNewForm">createNewForm</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/DataTransformer/MandateDateTransformer.php.html#41"><abbr title="MandateDateTransformer::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#390"><abbr title="UserController::createUserFilteringForm">createUserFilteringForm</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#376"><abbr title="UserController::createDeleteForm">createDeleteForm</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#355"><abbr title="UserController::createEditForm">createEditForm</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/BaseController.php.html#95"><abbr title="BaseController::requestAndDecode">requestAndDecode</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/BaseController.php.html#76"><abbr title="BaseController::createRequest">createRequest</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#179"><abbr title="Address::getStreet">getStreet</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#167"><abbr title="Address::setStreet">setStreet</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#153"><abbr title="Address::resetComplementaryLocation">resetComplementaryLocation</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#145"><abbr title="Address::getComplementaryLocation">getComplementaryLocation</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#191"><abbr title="Address::setComplementaryStreet">setComplementaryStreet</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#203"><abbr title="Address::getComplementaryStreet">getComplementaryStreet</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#249"><abbr title="Address::setCity">setCity</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#237"><abbr title="Address::getPostal">getPostal</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#225"><abbr title="Address::setPostal">setPostal</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#211"><abbr title="Address::resetComplementaryStreet">resetComplementaryStreet</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#133"><abbr title="Address::setComplementaryLocation">setComplementaryLocation</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#119"><abbr title="Address::resetComplementaryHome">resetComplementaryHome</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="features/bootstrap/Utils/Utils.php.html#86"><abbr title="Utils::buildTree">buildTree</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="features/bootstrap/Tests/UtilsTest.php.html#127"><abbr title="UtilsTest::stringProvider">stringProvider</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="features/bootstrap/Tests/UtilsTest.php.html#56"><abbr title="UtilsTest::treeProvider">treeProvider</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="features/bootstrap/Tests/UtilsTest.php.html#49"><abbr title="UtilsTest::testRecursiveExplode">testRecursiveExplode</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="features/bootstrap/Utils/Utils.php.html#131"><abbr title="Utils::recursiveExplode">recursiveExplode</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Doctrine/ORM/Filter/User/UserMandateFilter.php.html#58"><abbr title="UserMandateFilter::getDescription">getDescription</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#111"><abbr title="Address::getComplementaryHome">getComplementaryHome</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#99"><abbr title="Address::setComplementaryHome">setComplementaryHome</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#87"><abbr title="Address::getId">getId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Doctrine/ORM/Filter/User/UserTypeFilter.php.html#64"><abbr title="UserTypeFilter::getDescription">getDescription</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#261"><abbr title="Address::getCity">getCity</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#269"><abbr title="Address::getCountry">getCountry</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#407"><abbr title="User::getTypes">getTypes</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#397"><abbr title="User::setTypes">setTypes</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#381"><abbr title="User::addType">addType</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#369"><abbr title="User::getStudentConvention">getStudentConvention</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#417"><abbr title="User::setUpdatedAt">setUpdatedAt</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#427"><abbr title="User::getUpdatedAt">getUpdatedAt</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/BaseController.php.html#68"><abbr title="BaseController::decode">decode</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/BaseController.php.html#56"><abbr title="BaseController::generateUrl">generateUrl</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/BaseController.php.html#44"><abbr title="BaseController::setContainer">setContainer</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#448"><abbr title="User::validate">validate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#359"><abbr title="User::setStudentConvention">setStudentConvention</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#349"><abbr title="User::getOrganizationEmailCanonical">getOrganizationEmailCanonical</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/StudentConvention.php.html#67"><abbr title="StudentConvention::getDateOfSignature">getDateOfSignature</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/StudentConvention.php.html#57"><abbr title="StudentConvention::setReference">setReference</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/StudentConvention.php.html#47"><abbr title="StudentConvention::getReference">getReference</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/Address.php.html#279"><abbr title="Address::setCountry">setCountry</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/StudentConvention.php.html#77"><abbr title="StudentConvention::setDateOfSignature">setDateOfSignature</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/StudentConvention.php.html#87"><abbr title="StudentConvention::isSigned">isSigned</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#259"><abbr title="User::getFullname">getFullname</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#319"><abbr title="User::setOrganizationEmail">setOrganizationEmail</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#239"><abbr title="User::getEndingSchoolYear">getEndingSchoolYear</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#229"><abbr title="User::setEndingSchoolYear">setEndingSchoolYear</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="features/bootstrap/Tests/UtilsTest.php.html#33"><abbr title="UtilsTest::testBuildTree">testBuildTree</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/ApiBundle/Doctrine/ORM/Filter/AbstractResourceSearchFilter.php.html#104"><abbr title="AbstractResourceSearchFilter::getFilterValueFromUrl">getFilterValueFromUrl</a></a></td><td class="text-right">50%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="src/FrontBundle/Controller/BaseController.php.html#120"><abbr title="BaseController::handleGuzzleException">handleGuzzleException</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#43"><abbr title="UserController::indexAction">indexAction</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#43"><abbr title="JobController::indexAction">indexAction</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#231"><abbr title="UserController::updateAction">updateAction</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#219"><abbr title="JobController::updateAction">updateAction</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#292"><abbr title="UserController::deleteAction">deleteAction</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#197"><abbr title="MandateController::updateAction">updateAction</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#284"><abbr title="JobController::deleteAction">deleteAction</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#261"><abbr title="MandateController::deleteAction">deleteAction</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#189"><abbr title="UserController::editAction">editAction</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#145"><abbr title="UserController::showAction">showAction</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#111"><abbr title="MandateController::showAction">showAction</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#155"><abbr title="MandateController::editAction">editAction</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#93"><abbr title="UserController::newAction">newAction</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#174"><abbr title="JobController::editAction">editAction</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#132"><abbr title="JobController::showAction">showAction</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="features/bootstrap/Utils/Utils.php.html#131"><abbr title="Utils::recursiveExplode">recursiveExplode</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/BaseController.php.html#76"><abbr title="BaseController::createRequest">createRequest</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="src/FrontBundle/Menu/MenuBuilder.php.html#126"><abbr title="MenuBuilder::createUserMenu">createUserMenu</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#89"><abbr title="JobController::newAction">newAction</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#66"><abbr title="MandateController::newAction">newAction</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#448"><abbr title="User::validate">validate</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/BaseController.php.html#196"><abbr title="BaseController::getEntitiesFromCollection">getEntitiesFromCollection</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/DataTransformer/MandateDateTransformer.php.html#50"><abbr title="MandateDateTransformer::transform">transform</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/UserController.php.html#390"><abbr title="UserController::createUserFilteringForm">createUserFilteringForm</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/FrontBundle/Form/Type/UserType.php.html#124"><abbr title="UserType::onPreSetData">onPreSetData</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/JobController.php.html#400"><abbr title="JobController::getMandates">getMandates</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/ApiBundle/Entity/User.php.html#381"><abbr title="User::addType">addType</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/MandateController.php.html#42"><abbr title="MandateController::indexAction">indexAction</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/BaseController.php.html#56"><abbr title="BaseController::generateUrl">generateUrl</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/FrontBundle/Controller/BaseController.php.html#103"><abbr title="BaseController::sendAndDecode">sendAndDecode</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/ApiBundle/Doctrine/ORM/Filter/AbstractResourceSearchFilter.php.html#104"><abbr title="AbstractResourceSearchFilter::getFilterValueFromUrl">getFilterValueFromUrl</abbr></a></td><td class="text-right">4</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 3.0.0</a> using <a href="http://php.net/" target="_top">PHP 5.6.5</a> and <a href="http://phpunit.de/">PHPUnit 5.0.1</a> at Mon Oct 5 21:00:03 UTC 2015.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/holder.min.js" type="text/javascript"></script>
+  <script src="js/d3.min.js" type="text/javascript"></script>
+  <script src="js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([13,0,0,0,0,1,1,0,0,2,3,24], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([96,0,0,0,0,0,1,0,0,0,1,104], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,4,"<a href=\"features\/bootstrap\/Tests\/UtilsTest.php.html#21\">UtilsTest<\/a>"],[0,5,"<a href=\"features\/bootstrap\/Utils\/Utils.php.html#19\">Utils<\/a>"],[100,0,"<a href=\"src\/ApiBundle\/ApiBundle.php.html#21\">ApiBundle<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/DataFixtures\/Faker\/Provider\/JobProvider.php.html#23\">JobProvider<\/a>"],[100,5,"<a href=\"src\/ApiBundle\/DataFixtures\/Faker\/Provider\/MandateProvider.php.html#23\">MandateProvider<\/a>"],[100,8,"<a href=\"src\/ApiBundle\/DataFixtures\/Faker\/Provider\/StudentConventionProvider.php.html#21\">StudentConventionProvider<\/a>"],[100,5,"<a href=\"src\/ApiBundle\/DataFixtures\/Faker\/Provider\/UserProvider.php.html#25\">UserProvider<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/DependencyInjection\/ApiExtension.php.html#25\">ApiExtension<\/a>"],[100,4,"<a href=\"src\/ApiBundle\/Doctrine\/DBAL\/Type\/UTCDateTimeType.php.html#24\">UTCDateTimeType<\/a>"],[83.333333333333,9,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Filter\/AbstractResourceSearchFilter.php.html#29\">AbstractResourceSearchFilter<\/a>"],[88.888888888889,5,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Filter\/User\/UserMandateFilter.php.html#27\">UserMandateFilter<\/a>"],[92.307692307692,7,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Filter\/User\/UserTypeFilter.php.html#27\">UserTypeFilter<\/a>"],[100,9,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/JobNonPersistentManager.php.html#19\">JobNonPersistentManager<\/a>"],[100,10,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/MandateNonPersistentManager.php.html#19\">MandateNonPersistentManager<\/a>"],[100,11,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/UserManager.php.html#21\">UserManager<\/a>"],[0,18,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#8\">Address<\/a>"],[100,21,"<a href=\"src\/ApiBundle\/Entity\/Job.php.html#29\">Job<\/a>"],[100,13,"<a href=\"src\/ApiBundle\/Entity\/Mandate.php.html#29\">Mandate<\/a>"],[0,5,"<a href=\"src\/ApiBundle\/Entity\/StudentConvention.php.html#18\">StudentConvention<\/a>"],[48.214285714286,29,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#36\">User<\/a>"],[100,4,"<a href=\"src\/ApiBundle\/EventListener\/Doctrine\/JobListener.php.html#22\">JobListener<\/a>"],[100,4,"<a href=\"src\/ApiBundle\/EventListener\/Doctrine\/MandateListener.php.html#22\">MandateListener<\/a>"],[100,5,"<a href=\"src\/ApiBundle\/Utils\/UserRoles.php.html#17\">UserRoles<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Bundle\/UserBundle\/FrontUserBundle.php.html#21\">FrontUserBundle<\/a>"],[100,14,"<a href=\"src\/FrontBundle\/Client\/ApiClient.php.html#25\">ApiClient<\/a>"],[0,25,"<a href=\"src\/FrontBundle\/Controller\/BaseController.php.html#32\">BaseController<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Controller\/DashboardController.php.html#25\">DashboardController<\/a>"],[0,38,"<a href=\"src\/FrontBundle\/Controller\/JobController.php.html#29\">JobController<\/a>"],[0,31,"<a href=\"src\/FrontBundle\/Controller\/MandateController.php.html#28\">MandateController<\/a>"],[0,39,"<a href=\"src\/FrontBundle\/Controller\/UserController.php.html#29\">UserController<\/a>"],[100,6,"<a href=\"src\/FrontBundle\/Twig\/FrontExtension.php.html#21\">FrontExtension<\/a>"],[0,5,"<a href=\"src\/FrontBundle\/Form\/DataTransformer\/MandateDateTransformer.php.html#29\">MandateDateTransformer<\/a>"],[95.238095238095,11,"<a href=\"src\/FrontBundle\/Form\/DataTransformer\/StudentConventionTransformer.php.html#22\">StudentConventionTransformer<\/a>"],[0,3,"<a href=\"src\/FrontBundle\/Form\/Type\/JobFilteringType.php.html#22\">JobFilteringType<\/a>"],[0,3,"<a href=\"src\/FrontBundle\/Form\/Type\/JobType.php.html#20\">JobType<\/a>"],[0,2,"<a href=\"src\/FrontBundle\/Form\/Type\/MandateType.php.html#21\">MandateType<\/a>"],[100,2,"<a href=\"src\/FrontBundle\/Form\/Type\/StudentConventionType.php.html#21\">StudentConventionType<\/a>"],[100,3,"<a href=\"src\/FrontBundle\/Form\/Type\/UserFilteringType.php.html#22\">UserFilteringType<\/a>"],[90.277777777778,5,"<a href=\"src\/FrontBundle\/Form\/Type\/UserType.php.html#25\">UserType<\/a>"],[100,0,"<a href=\"src\/FrontBundle\/FrontBundle.php.html#12\">FrontBundle<\/a>"],[53.225806451613,7,"<a href=\"src\/FrontBundle\/Menu\/MenuBuilder.php.html#23\">MenuBuilder<\/a>"],[100,2,"<a href=\"src\/FrontBundle\/Security\/Http\/Authentication\/AuthenticationSuccessHandler.php.html#25\">AuthenticationSuccessHandler<\/a>"],[100,2,"<a href=\"src\/FrontBundle\/Utils\/IriHelper.php.html#19\">IriHelper<\/a>"],[100,3,"<a href=\"src\/FrontBundle\/Utils\/RoleHierarchyHelper.php.html#19\">RoleHierarchyHelper<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"features\/bootstrap\/Tests\/UtilsTest.php.html#33\">UtilsTest::testBuildTree<\/a>"],[0,1,"<a href=\"features\/bootstrap\/Tests\/UtilsTest.php.html#49\">UtilsTest::testRecursiveExplode<\/a>"],[0,1,"<a href=\"features\/bootstrap\/Tests\/UtilsTest.php.html#56\">UtilsTest::treeProvider<\/a>"],[0,1,"<a href=\"features\/bootstrap\/Tests\/UtilsTest.php.html#127\">UtilsTest::stringProvider<\/a>"],[0,1,"<a href=\"features\/bootstrap\/Utils\/Utils.php.html#86\">Utils::buildTree<\/a>"],[0,4,"<a href=\"features\/bootstrap\/Utils\/Utils.php.html#131\">Utils::recursiveExplode<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/DataFixtures\/Faker\/Provider\/JobProvider.php.html#662\">JobProvider::jobTitle<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/DataFixtures\/Faker\/Provider\/JobProvider.php.html#679\">JobProvider::jobAbbreviation<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/DataFixtures\/Faker\/Provider\/MandateProvider.php.html#32\">MandateProvider::endMandateDateTime<\/a>"],[100,4,"<a href=\"src\/ApiBundle\/DataFixtures\/Faker\/Provider\/MandateProvider.php.html#59\">MandateProvider::startMandateDateTime<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/DataFixtures\/Faker\/Provider\/StudentConventionProvider.php.html#31\">StudentConventionProvider::__construct<\/a>"],[100,6,"<a href=\"src\/ApiBundle\/DataFixtures\/Faker\/Provider\/StudentConventionProvider.php.html#44\">StudentConventionProvider::generateReference<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/DataFixtures\/Faker\/Provider\/StudentConventionProvider.php.html#83\">StudentConventionProvider::normalizeString<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/DataFixtures\/Faker\/Provider\/UserProvider.php.html#35\">UserProvider::__construct<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/DataFixtures\/Faker\/Provider\/UserProvider.php.html#47\">UserProvider::userRole<\/a>"],[100,3,"<a href=\"src\/ApiBundle\/DataFixtures\/Faker\/Provider\/UserProvider.php.html#59\">UserProvider::userTypes<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/DependencyInjection\/ApiExtension.php.html#30\">ApiExtension::load<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/Doctrine\/DBAL\/Type\/UTCDateTimeType.php.html#29\">UTCDateTimeType::convertToDatabaseValue<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/Doctrine\/DBAL\/Type\/UTCDateTimeType.php.html#41\">UTCDateTimeType::convertToPHPValue<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Filter\/AbstractResourceSearchFilter.php.html#46\">AbstractResourceSearchFilter::__construct<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Filter\/AbstractResourceSearchFilter.php.html#60\">AbstractResourceSearchFilter::apply<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Filter\/AbstractResourceSearchFilter.php.html#84\">AbstractResourceSearchFilter::applyFilter<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Filter\/AbstractResourceSearchFilter.php.html#93\">AbstractResourceSearchFilter::getResourceClass<\/a>"],[50,3,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Filter\/AbstractResourceSearchFilter.php.html#104\">AbstractResourceSearchFilter::getFilterValueFromUrl<\/a>"],[100,3,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Filter\/User\/UserMandateFilter.php.html#32\">UserMandateFilter::applyFilter<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Filter\/User\/UserMandateFilter.php.html#50\">UserMandateFilter::getResourceClass<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Filter\/User\/UserMandateFilter.php.html#58\">UserMandateFilter::getDescription<\/a>"],[100,5,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Filter\/User\/UserTypeFilter.php.html#32\">UserTypeFilter::applyFilter<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Filter\/User\/UserTypeFilter.php.html#56\">UserTypeFilter::getResourceClass<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Filter\/User\/UserTypeFilter.php.html#64\">UserTypeFilter::getDescription<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/JobNonPersistentManager.php.html#26\">JobNonPersistentManager::remove<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/JobNonPersistentManager.php.html#35\">JobNonPersistentManager::update<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/JobNonPersistentManager.php.html#43\">JobNonPersistentManager::supports<\/a>"],[100,5,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/JobNonPersistentManager.php.html#58\">JobNonPersistentManager::updateAbbreviation<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/MandateNonPersistentManager.php.html#26\">MandateNonPersistentManager::remove<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/MandateNonPersistentManager.php.html#38\">MandateNonPersistentManager::update<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/MandateNonPersistentManager.php.html#46\">MandateNonPersistentManager::supports<\/a>"],[100,5,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/MandateNonPersistentManager.php.html#60\">MandateNonPersistentManager::updateName<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/UserManager.php.html#28\">UserManager::remove<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/UserManager.php.html#38\">UserManager::update<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/UserManager.php.html#46\">UserManager::supports<\/a>"],[100,3,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/UserManager.php.html#61\">UserManager::deleteUser<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/UserManager.php.html#75\">UserManager::updateCanonicalFields<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/Doctrine\/ORM\/Manager\/UserManager.php.html#87\">UserManager::updateUser<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#87\">Address::getId<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#99\">Address::setComplementaryHome<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#111\">Address::getComplementaryHome<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#119\">Address::resetComplementaryHome<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#133\">Address::setComplementaryLocation<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#145\">Address::getComplementaryLocation<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#153\">Address::resetComplementaryLocation<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#167\">Address::setStreet<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#179\">Address::getStreet<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#191\">Address::setComplementaryStreet<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#203\">Address::getComplementaryStreet<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#211\">Address::resetComplementaryStreet<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#225\">Address::setPostal<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#237\">Address::getPostal<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#249\">Address::setCity<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#261\">Address::getCity<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#269\">Address::getCountry<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/Address.php.html#279\">Address::setCountry<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Job.php.html#89\">Job::__construct<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Job.php.html#97\">Job::getId<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Job.php.html#107\">Job::setAbbreviation<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Job.php.html#117\">Job::getAbbreviation<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Job.php.html#127\">Job::setEnabled<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Job.php.html#137\">Job::getEnabled<\/a>"],[100,6,"<a href=\"src\/ApiBundle\/Entity\/Job.php.html#147\">Job::setMandate<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Job.php.html#167\">Job::getMandate<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Job.php.html#177\">Job::setTitle<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Job.php.html#187\">Job::getTitle<\/a>"],[100,3,"<a href=\"src\/ApiBundle\/Entity\/Job.php.html#197\">Job::addUser<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/Entity\/Job.php.html#217\">Job::removeUser<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Job.php.html#233\">Job::getUsers<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Mandate.php.html#80\">Mandate::__construct<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Mandate.php.html#88\">Mandate::getId<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Mandate.php.html#98\">Mandate::setEndAt<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Mandate.php.html#108\">Mandate::getEndAt<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/Entity\/Mandate.php.html#120\">Mandate::addJob<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/Entity\/Mandate.php.html#140\">Mandate::removeJob<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Mandate.php.html#156\">Mandate::getJobs<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Mandate.php.html#166\">Mandate::setName<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Mandate.php.html#176\">Mandate::getName<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Mandate.php.html#186\">Mandate::setStartAt<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/Mandate.php.html#196\">Mandate::getStartAt<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/StudentConvention.php.html#47\">StudentConvention::getReference<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/StudentConvention.php.html#57\">StudentConvention::setReference<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/StudentConvention.php.html#67\">StudentConvention::getDateOfSignature<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/StudentConvention.php.html#77\">StudentConvention::setDateOfSignature<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/StudentConvention.php.html#87\">StudentConvention::isSigned<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#197\">User::__construct<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#209\">User::setCreatedAt<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#219\">User::getCreatedAt<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#229\">User::setEndingSchoolYear<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#239\">User::getEndingSchoolYear<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#249\">User::setFullname<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#259\">User::getFullname<\/a>"],[100,3,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#271\">User::addJob<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#293\">User::removeJob<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#309\">User::getJobs<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#319\">User::setOrganizationEmail<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#329\">User::getOrganizationEmail<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#339\">User::setOrganizationEmailCanonical<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#349\">User::getOrganizationEmailCanonical<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#359\">User::setStudentConvention<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#369\">User::getStudentConvention<\/a>"],[0,2,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#381\">User::addType<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#397\">User::setTypes<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#407\">User::getTypes<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#417\">User::setUpdatedAt<\/a>"],[0,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#427\">User::getUpdatedAt<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#435\">User::getAllowedTypes<\/a>"],[0,3,"<a href=\"src\/ApiBundle\/Entity\/User.php.html#448\">User::validate<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/EventListener\/Doctrine\/JobListener.php.html#34\">JobListener::__construct<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/EventListener\/Doctrine\/JobListener.php.html#45\">JobListener::preFlush<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/EventListener\/Doctrine\/JobListener.php.html#50\">JobListener::preRemove<\/a>"],[100,2,"<a href=\"src\/ApiBundle\/EventListener\/Doctrine\/MandateListener.php.html#34\">MandateListener::__construct<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/EventListener\/Doctrine\/MandateListener.php.html#45\">MandateListener::preFlush<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/EventListener\/Doctrine\/MandateListener.php.html#50\">MandateListener::preRemove<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Utils\/UserRoles.php.html#29\">UserRoles::__construct<\/a>"],[100,1,"<a href=\"src\/ApiBundle\/Utils\/UserRoles.php.html#37\">UserRoles::getRoles<\/a>"],[100,3,"<a href=\"src\/ApiBundle\/Utils\/UserRoles.php.html#47\">UserRoles::extractRoles<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Bundle\/UserBundle\/FrontUserBundle.php.html#26\">FrontUserBundle::getParent<\/a>"],[100,2,"<a href=\"src\/FrontBundle\/Client\/ApiClient.php.html#47\">ApiClient::__construct<\/a>"],[100,5,"<a href=\"src\/FrontBundle\/Client\/ApiClient.php.html#65\">ApiClient::createRequest<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Client\/ApiClient.php.html#90\">ApiClient::request<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Client\/ApiClient.php.html#98\">ApiClient::send<\/a>"],[100,5,"<a href=\"src\/FrontBundle\/Client\/ApiClient.php.html#113\">ApiClient::buildUrl<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Controller\/BaseController.php.html#44\">BaseController::setContainer<\/a>"],[0,2,"<a href=\"src\/FrontBundle\/Controller\/BaseController.php.html#56\">BaseController::generateUrl<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Controller\/BaseController.php.html#68\">BaseController::decode<\/a>"],[0,4,"<a href=\"src\/FrontBundle\/Controller\/BaseController.php.html#76\">BaseController::createRequest<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Controller\/BaseController.php.html#95\">BaseController::requestAndDecode<\/a>"],[0,2,"<a href=\"src\/FrontBundle\/Controller\/BaseController.php.html#103\">BaseController::sendAndDecode<\/a>"],[0,10,"<a href=\"src\/FrontBundle\/Controller\/BaseController.php.html#120\">BaseController::handleGuzzleException<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Controller\/BaseController.php.html#182\">BaseController::getDoctrine<\/a>"],[0,3,"<a href=\"src\/FrontBundle\/Controller\/BaseController.php.html#196\">BaseController::getEntitiesFromCollection<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Controller\/DashboardController.php.html#37\">DashboardController::indexAction<\/a>"],[0,6,"<a href=\"src\/FrontBundle\/Controller\/JobController.php.html#43\">JobController::indexAction<\/a>"],[0,4,"<a href=\"src\/FrontBundle\/Controller\/JobController.php.html#89\">JobController::newAction<\/a>"],[0,5,"<a href=\"src\/FrontBundle\/Controller\/JobController.php.html#132\">JobController::showAction<\/a>"],[0,5,"<a href=\"src\/FrontBundle\/Controller\/JobController.php.html#174\">JobController::editAction<\/a>"],[0,6,"<a href=\"src\/FrontBundle\/Controller\/JobController.php.html#219\">JobController::updateAction<\/a>"],[0,6,"<a href=\"src\/FrontBundle\/Controller\/JobController.php.html#284\">JobController::deleteAction<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Controller\/JobController.php.html#327\">JobController::createNewForm<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Controller\/JobController.php.html#349\">JobController::createEditForm<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Controller\/JobController.php.html#370\">JobController::createDeleteForm<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Controller\/JobController.php.html#384\">JobController::createJobFilteringForm<\/a>"],[0,2,"<a href=\"src\/FrontBundle\/Controller\/JobController.php.html#400\">JobController::getMandates<\/a>"],[0,2,"<a href=\"src\/FrontBundle\/Controller\/MandateController.php.html#42\">MandateController::indexAction<\/a>"],[0,4,"<a href=\"src\/FrontBundle\/Controller\/MandateController.php.html#66\">MandateController::newAction<\/a>"],[0,5,"<a href=\"src\/FrontBundle\/Controller\/MandateController.php.html#111\">MandateController::showAction<\/a>"],[0,5,"<a href=\"src\/FrontBundle\/Controller\/MandateController.php.html#155\">MandateController::editAction<\/a>"],[0,6,"<a href=\"src\/FrontBundle\/Controller\/MandateController.php.html#197\">MandateController::updateAction<\/a>"],[0,6,"<a href=\"src\/FrontBundle\/Controller\/MandateController.php.html#261\">MandateController::deleteAction<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Controller\/MandateController.php.html#304\">MandateController::createNewForm<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Controller\/MandateController.php.html#324\">MandateController::createEditForm<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Controller\/MandateController.php.html#345\">MandateController::createDeleteForm<\/a>"],[0,7,"<a href=\"src\/FrontBundle\/Controller\/UserController.php.html#43\">UserController::indexAction<\/a>"],[0,5,"<a href=\"src\/FrontBundle\/Controller\/UserController.php.html#93\">UserController::newAction<\/a>"],[0,5,"<a href=\"src\/FrontBundle\/Controller\/UserController.php.html#145\">UserController::showAction<\/a>"],[0,5,"<a href=\"src\/FrontBundle\/Controller\/UserController.php.html#189\">UserController::editAction<\/a>"],[0,6,"<a href=\"src\/FrontBundle\/Controller\/UserController.php.html#231\">UserController::updateAction<\/a>"],[0,6,"<a href=\"src\/FrontBundle\/Controller\/UserController.php.html#292\">UserController::deleteAction<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Controller\/UserController.php.html#335\">UserController::createNewForm<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Controller\/UserController.php.html#355\">UserController::createEditForm<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Controller\/UserController.php.html#376\">UserController::createDeleteForm<\/a>"],[0,2,"<a href=\"src\/FrontBundle\/Controller\/UserController.php.html#390\">UserController::createUserFilteringForm<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Twig\/FrontExtension.php.html#26\">FrontExtension::getFilters<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Twig\/FrontExtension.php.html#49\">FrontExtension::uriIdFilter<\/a>"],[100,3,"<a href=\"src\/FrontBundle\/Twig\/FrontExtension.php.html#67\">FrontExtension::userTopRoleFilter<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Twig\/FrontExtension.php.html#85\">FrontExtension::getName<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Form\/DataTransformer\/MandateDateTransformer.php.html#41\">MandateDateTransformer::__construct<\/a>"],[0,3,"<a href=\"src\/FrontBundle\/Form\/DataTransformer\/MandateDateTransformer.php.html#50\">MandateDateTransformer::transform<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Form\/DataTransformer\/MandateDateTransformer.php.html#64\">MandateDateTransformer::reverseTransform<\/a>"],[91.666666666667,5,"<a href=\"src\/FrontBundle\/Form\/DataTransformer\/StudentConventionTransformer.php.html#33\">StudentConventionTransformer::transform<\/a>"],[100,6,"<a href=\"src\/FrontBundle\/Form\/DataTransformer\/StudentConventionTransformer.php.html#55\">StudentConventionTransformer::reverseTransform<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Form\/Type\/JobFilteringType.php.html#32\">JobFilteringType::__construct<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Form\/Type\/JobFilteringType.php.html#40\">JobFilteringType::buildForm<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Form\/Type\/JobFilteringType.php.html#59\">JobFilteringType::getName<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Form\/Type\/JobType.php.html#30\">JobType::__construct<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Form\/Type\/JobType.php.html#39\">JobType::buildForm<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Form\/Type\/JobType.php.html#78\">JobType::getName<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Form\/Type\/MandateType.php.html#27\">MandateType::buildForm<\/a>"],[0,1,"<a href=\"src\/FrontBundle\/Form\/Type\/MandateType.php.html#77\">MandateType::getName<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Form\/Type\/StudentConventionType.php.html#27\">StudentConventionType::buildForm<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Form\/Type\/StudentConventionType.php.html#58\">StudentConventionType::getName<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Form\/Type\/UserFilteringType.php.html#32\">UserFilteringType::__construct<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Form\/Type\/UserFilteringType.php.html#40\">UserFilteringType::buildForm<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Form\/Type\/UserFilteringType.php.html#72\">UserFilteringType::getName<\/a>"],[100,2,"<a href=\"src\/FrontBundle\/Form\/Type\/UserType.php.html#31\">UserType::buildForm<\/a>"],[0,2,"<a href=\"src\/FrontBundle\/Form\/Type\/UserType.php.html#124\">UserType::onPreSetData<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Form\/Type\/UserType.php.html#140\">UserType::getName<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Menu\/MenuBuilder.php.html#45\">MenuBuilder::__construct<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Menu\/MenuBuilder.php.html#60\">MenuBuilder::createHeaderMenu<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Menu\/MenuBuilder.php.html#88\">MenuBuilder::createOrganisationManagementMenu<\/a>"],[0,4,"<a href=\"src\/FrontBundle\/Menu\/MenuBuilder.php.html#126\">MenuBuilder::createUserMenu<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Security\/Http\/Authentication\/AuthenticationSuccessHandler.php.html#35\">AuthenticationSuccessHandler::setJwtManager<\/a>"],[100,1,"<a href=\"src\/FrontBundle\/Security\/Http\/Authentication\/AuthenticationSuccessHandler.php.html#45\">AuthenticationSuccessHandler::onAuthenticationSuccess<\/a>"],[100,2,"<a href=\"src\/FrontBundle\/Utils\/IriHelper.php.html#29\">IriHelper::extractId<\/a>"],[100,3,"<a href=\"src\/FrontBundle\/Utils\/RoleHierarchyHelper.php.html#37\">RoleHierarchyHelper::getTopLevelRole<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

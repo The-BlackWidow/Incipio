@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>http://in6pio.github.io/Incipio/</loc>
+     <lastmod>2015-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>http://in6pio.github.io/Incipio/user-guide/install/</loc>
+     <lastmod>2015-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://in6pio.github.io/Incipio/user-guide/first-use/</loc>
+     <lastmod>2015-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://in6pio.github.io/Incipio/user-guide/user-management/</loc>
+     <lastmod>2015-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://in6pio.github.io/Incipio/dev-guide/git-workflow/</loc>
+     <lastmod>2015-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://in6pio.github.io/Incipio/dev-guide/dev-environment/</loc>
+     <lastmod>2015-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://in6pio.github.io/Incipio/dev-guide/dev-tools/</loc>
+     <lastmod>2015-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://in6pio.github.io/Incipio/dev-guide/coding-guidelines/</loc>
+     <lastmod>2015-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://in6pio.github.io/Incipio/dev-guide/api/</loc>
+     <lastmod>2015-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://in6pio.github.io/Incipio/dev-guide/documentation/</loc>
+     <lastmod>2015-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>http://in6pio.github.io/Incipio/about/</loc>
+     <lastmod>2015-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+</urlset>
