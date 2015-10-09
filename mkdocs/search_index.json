@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to Incipio\n\n\n\u00ab Incipio : Prendre en main, se mettre \u00e0 entreprendre, commencer \u00bb\n\n\nIncipio est un projet qui vise \u00e0 b\u00e2tir un \nERP\n communautaire et libre pour l\u2019ensemble des structures de type Junior-Entreprise, faisant partie ou non de la \nCNJE\n.\n\n\nSi vous souhaitez contribuer ou faire remonter un bug, n'h\u00e9sitez pas \u00e0 \nnous \u00e9crire un ticket ou une demande\n.\n\n\nGuide Utiliateur\n\n\n\n\nInstallation\n\n\nFirst user\n\n\nUser Management\n\n\n\n\nGuide D\u00e9veloppeur\n\n\n\n\nGit workflow\n\n\nVM for dev\n\n\nConfigure your environment\n\n\nCoding guidelines\n\n\nAPI Documentation\n\n\nDocument your work", 
+            "text": "Welcome to Incipio\n\n\n\u00ab Incipio : Prendre en main, se mettre \u00e0 entreprendre, commencer \u00bb\n\n\nIncipio est un projet qui vise \u00e0 b\u00e2tir un \nERP\n communautaire et libre pour l\u2019ensemble des structures de type Junior-Entreprise, faisant partie ou non de la \nCNJE\n.\n\n\nSi vous souhaitez contribuer ou faire remonter un bug, n'h\u00e9sitez pas \u00e0 \nnous \u00e9crire un ticket ou une demande\n.\n\n\nRoadmap\n\n\n\n\nMilestones\n\n\nWaffle Board\n\n\n\n\nGuide Utiliateur\n\n\n\n\nInstallation\n\n\nFirst user\n\n\nUser Management\n\n\n\n\nGuide D\u00e9veloppeur\n\n\n\n\nGetting started\n\n\nGit workflow\n\n\nConfigure your environment\n\n\nCoding guidelines\n\n\nAPI Documentation\n\n\nDocument your work\n\n\n\n\nRapports\n\n\n\n\nScrutinizer\n\n\nCodacy\n\n\nSensioLabs Insight\n\n\n\n\nTravis\n\n\n\n\n\n\nCoverage PHPunit\n\n\n\n\nApp PhpMetrics\n\n\nApiBundle PhpMetrics\n\n\nFrontBundle PhpMetrics\n\n\nApplication API (code)\n\n\n\n\nJ.E. utilisant Incipio (publiquement)\n\n\n\n\nEmagine-JE", 
             "title": "Accueil"
         }, 
         {
@@ -11,14 +11,29 @@
             "title": "Welcome to Incipio"
         }, 
         {
+            "location": "/#roadmap", 
+            "text": "Milestones  Waffle Board", 
+            "title": "Roadmap"
+        }, 
+        {
             "location": "/#guide-utiliateur", 
             "text": "Installation  First user  User Management", 
             "title": "Guide Utiliateur"
         }, 
         {
             "location": "/#guide-developpeur", 
-            "text": "Git workflow  VM for dev  Configure your environment  Coding guidelines  API Documentation  Document your work", 
+            "text": "Getting started  Git workflow  Configure your environment  Coding guidelines  API Documentation  Document your work", 
             "title": "Guide D\u00e9veloppeur"
+        }, 
+        {
+            "location": "/#rapports", 
+            "text": "Scrutinizer  Codacy  SensioLabs Insight   Travis    Coverage PHPunit   App PhpMetrics  ApiBundle PhpMetrics  FrontBundle PhpMetrics  Application API (code)", 
+            "title": "Rapports"
+        }, 
+        {
+            "location": "/#je-utilisant-incipio-publiquement", 
+            "text": "Emagine-JE", 
+            "title": "J.E. utilisant Incipio (publiquement)"
         }, 
         {
             "location": "/user-guide/install/", 
@@ -71,14 +86,49 @@
             "title": "Mandate"
         }, 
         {
+            "location": "/dev-guide/dev-environment/", 
+            "text": "Development Environment\n\n\nThe purpose of this environment is to ease the development process. We preconfigured a Virtual Machine just for you. The only thing you have to do is to install the requirements and the deployment will be done with only one command. Of course, \nusing this development environment is by no means mandatory\n.\n\n\nRequirements\n\n\n\n\nVagrant\n\n\nAnsible\n\n\n\n\nGetting started\n\n\nInstall\n\n\n\n\nInstall the requirements\n\n\nClone the project and go inside the project folder with your console\n\n\nStart the Vagrant VM: \nvagrant up\n\n\n\n\nIf the provision fails, you can try to run ad hoc Ansible commands with a greater verbosity:\n\n\nansible-playbook -i .vagrant/machines/default/virtualbox/action_provision --private-key=~/.vagrant.d/insecure_private_key -u vagrant ansible/playbook.yml -vvvv\n\n\n\n\nUsage\n\n\n\n\nHTTP access: \nlocalhost:8080\n\n\nSSH access: \nvagrant ssh\n\n\nMySQL access:\n\n\nuser : \nroot\n\n\nno password\n\n\nremote access: specify \n127.0.0.1\n as host (port \n3307\n) (requires MySQL client)\n\n\n\n\n\n\nredis access:\n\n\nremote access allowed (requires redis client)\n\n\nhost: \n127.0.0.1\n\n\nport: \n6379\n\n\n\n\n\n\n\n\nIf you wish to reload configuration: \nvagrant provision\n\n\nIf you need to execute a root command, you can either use \nsudo\n or login as root the root user with \nsu\n (password:\n\nvagrant\n).\n\n\nIf you wish to change the port used because they overlap with already used ports or whatever your reason is, check\nthe configuration in the \nVagrantfile\n.\n\n\nDefault configuration\n\n\nThe VM container is configured via Ansible:\n\n\n\n\nLatest version of \nJessie\n (Debian 8)\n\n\nWget\n \n \ncURL\n\n\nnginx\n\n\nGit\n\n\n\n\nPHP Environment:\n\n\n\n\nPHP5.6\n\n\nPHP CLI\n\n\nPHP5 FPM\n\n\nPear\n\n\nComposer\n\n\nMcrypt\n\n\nXdebug\n\n\nPsySH\n\n\n\n\nDatabases:\n\n\n\n\nRedis\n\n\nMySQL\n\n\n\n\nGit:\n\n\n\n\nAliases\n\n\nDefault push method set to \ncurrent\n\n\nGlobal gitignore preconfigured to ignore \nlinux\n, \nintelliJ\n, \nNetBeans\n and \nEclipse\n files\n\n\nFor more: \ngit config --global --list\n\n\n\n\nShell aliases: run \nalias\n to see the available aliases.\n\n\nKnown bugs\n\n\nIt is possible that the update of the system and the composer install takes very long. For the later, you can drop the task and run it manually it usually takes less time and at least you have an idea of the progress. If you do so, you will have to run manually the tasks which have been configured after this command. Hopefully, it is just creating the database or updating it ;)", 
+            "title": "Getting started"
+        }, 
+        {
+            "location": "/dev-guide/dev-environment/#development-environment", 
+            "text": "The purpose of this environment is to ease the development process. We preconfigured a Virtual Machine just for you. The only thing you have to do is to install the requirements and the deployment will be done with only one command. Of course,  using this development environment is by no means mandatory .  Requirements   Vagrant  Ansible", 
+            "title": "Development Environment"
+        }, 
+        {
+            "location": "/dev-guide/dev-environment/#getting-started", 
+            "text": "", 
+            "title": "Getting started"
+        }, 
+        {
+            "location": "/dev-guide/dev-environment/#install", 
+            "text": "Install the requirements  Clone the project and go inside the project folder with your console  Start the Vagrant VM:  vagrant up   If the provision fails, you can try to run ad hoc Ansible commands with a greater verbosity:  ansible-playbook -i .vagrant/machines/default/virtualbox/action_provision --private-key=~/.vagrant.d/insecure_private_key -u vagrant ansible/playbook.yml -vvvv", 
+            "title": "Install"
+        }, 
+        {
+            "location": "/dev-guide/dev-environment/#usage", 
+            "text": "HTTP access:  localhost:8080  SSH access:  vagrant ssh  MySQL access:  user :  root  no password  remote access: specify  127.0.0.1  as host (port  3307 ) (requires MySQL client)    redis access:  remote access allowed (requires redis client)  host:  127.0.0.1  port:  6379     If you wish to reload configuration:  vagrant provision  If you need to execute a root command, you can either use  sudo  or login as root the root user with  su  (password: vagrant ).  If you wish to change the port used because they overlap with already used ports or whatever your reason is, check\nthe configuration in the  Vagrantfile .", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/dev-guide/dev-environment/#default-configuration", 
+            "text": "The VM container is configured via Ansible:   Latest version of  Jessie  (Debian 8)  Wget     cURL  nginx  Git   PHP Environment:   PHP5.6  PHP CLI  PHP5 FPM  Pear  Composer  Mcrypt  Xdebug  PsySH   Databases:   Redis  MySQL   Git:   Aliases  Default push method set to  current  Global gitignore preconfigured to ignore  linux ,  intelliJ ,  NetBeans  and  Eclipse  files  For more:  git config --global --list   Shell aliases: run  alias  to see the available aliases.", 
+            "title": "Default configuration"
+        }, 
+        {
+            "location": "/dev-guide/dev-environment/#known-bugs", 
+            "text": "It is possible that the update of the system and the composer install takes very long. For the later, you can drop the task and run it manually it usually takes less time and at least you have an idea of the progress. If you do so, you will have to run manually the tasks which have been configured after this command. Hopefully, it is just creating the database or updating it ;)", 
+            "title": "Known bugs"
+        }, 
+        {
             "location": "/dev-guide/git-workflow/", 
-            "text": "Git Workflow: triangular workflow\n\n\nYou do not have the rights to directly write on the project. Hence if you wish to push some code, the best thing to do is to \nfork\n the project. Once done, you will have a copy of the the repository \nin6pio/Incipio\n to your own namespace, with write access.\n\n\nOn your fork, you can develop and do changes as you wish. We recommend you to do your modifications in separate branches so that you can keep the original branches up to date with the original repository.\n\n\nIf you are not used to this kind of workflow, do not worry, everything is detailed below!\n\n\n\n\nFork Incipio\n\n\nNothing easier than that: go to the \nin6pio/Incipio repository\n and then clic on the \nfork\n button ;)\n\n\nFor more, check \nGitHub guide: forking projects\n.\n\n\n\n\nKeep your fork up to date\n\n\nFirst, clone your fork!\n\n\nHere it becomes a little bit trickier if you never did it. With your fork, you can do your changes as you like it will not affect the original repository. However, sometimes changes may happen on the original repository and you want to keep your fork up to date so that you can develop with the latest work. To achieve that, you have to configure the \ntracked repositories\n.\n\n\nTo see which repositories are tracked, use \ngit remote -v\n. The current result should be something like:\n\n\norigin  git@github.com:yourNameSpace/Incipio.git (fetch)\norigin  git@github.com:yourNameSpace/Incipio.git (push)\n\n\n\n\nNow, add the original repository to tracked repositories: \ngit remote add upstream git@github.com:in6pio/Incipio.git\n. Now if you do \ngit remote -v\n again you should have:\n\n\norigin  git@github.com:yourNameSpace/Incipio.git (fetch)\norigin  git@github.com:yourNameSpace/Incipio.git (push)\nupstream    git@github.com:in6pio/Incipio.git (fetch)\nupstream    git@github.com:in6pio/Incipio.git (push)\n\n\n\n\nThat's it! Now, if you wish to update your repository, you can do:\n\n\n\n\ngit fetch upstream\n: get the updates from the original repository.\n\n\ngit fetch origin\n: get the updates of your remote repository (the fork).\n\n\n\n\nSource: \nGitHub: syncing a fork\n\n\nDevelop\n\n\nIt is highly recommended to use the development environment provided to develop. If you want more information on it, check \nthis link\n.\n\n\nIf you wish to properly keep your fork up to date, do not touch the original branches like \nmaster\n!\n\n\nNow let's start. It is assumed that your repository is up to date. Create your branch \nfeatureName\n (the branch name has really no importance, you will be the only one to use it) from the \ndev\n branch:\n\n\ngit checkout origin/dev     # You are now on your remote branch `dev`\ngit checkout -b featureName # You are now on the branch featureName\n\n\n\n\nNow you can start to code. Do not forget to follow the \nproject contributing guidelines\n!\n\n\nSubmit your work\n\n\nIt is assumed that you have your latest work that you wish to submit pushed on the branch \nfeatureName\n on your fork. Before submitting your work, first check that your work following the project standards. Then, to clean your work, do not forget to \nrebase it first\n. Why? To ensure your work integrates the latests commits of the original repository and ease the merge! Never did that? Then do the following:\n\n\nGo on your branch \nfeatureName\n.\n\n\nUpdate your local repository:\n\n\ngit fetch upstream\ngit fetch origin\ngit pull featureName\n\n\n\n\nRebase your work:\n\n\ngit rebase upstream/dev\n\n\n\n\nSolve the conflicts, and only the conflicts, nothing else! To do so, check the conflicted files. Once this is done, do:\n\n\ngit add -A\ngit rebase --continue\n\n\n\n\nAnd to that until the rebase is successful :)\n\n\nNow repush your work. You will probably need to do a force push.\n\n\nGood! Now you can do a \npull request\n with the original repository on the \ndev\n branch (\nin6pio:dev\n) as a \nbase\n and your fork branch as \nHEAD\n (\nyourNameSpace:featureName\n).\n\n\nFor more\n\n\n\n\nLearn Git with pcottle\n\n\nBien utiliser \ngit merge\n et \ngit rebase\n\n\nGetting solid at \ngit rebase\n and \ngit merge\n\n\nHow to undo almost anything with Git\n\n\n\n\nLast be not the least, if you feel uncomfortable with Git in command lines, checkout:\n\n\n\n\nGit GUI clients\n\n\nungit\n\n\n\n\nGood coding!\n\n\nSources\n\n\n\n\nGit Workflows For Successful Deployment\n - Matt Surabian (\nbocoup\n) | May 07, 2015\n\n\nGit Best Practices: Workflow Guidelines\n - Andrew Berry (\nLullabot\n) | June 14, 2012\n\n\nGitHub Flow\n - Scott Chacon | August 31, 2011\n\n\nA successful Git branching model\n - Vincent Driessen | January 05, 2010\n\n\nPractical Git: A Workflow to Preserve Your Sanity\n - Keith D Gregory\n\n\nUnderstanding the Git Workflow\n - Ben Sandofsky\n\n\nGit Workflows That Work\n - Spencer Christensen | May 2, 2014\n\n\nGit branch strategy for small dev team\n - Bilal and Olga | March 11, 2010\n\n\nGit Branching - Branching Workflows\n - Git official doc\n\n\nComparing Workflows\n - \nAtlassian\n\n\nGit Workflow in Invenio\n - \nInvenio", 
+            "text": "Git Workflow\n\n\nThe Git process being used is commonly called triangular workflow. You do not have the rights to directly write on the project. Hence if you wish to push some code, the best thing to do is to \nfork\n the project. Once done, you will have a copy of the the repository \nin6pio/Incipio\n to your own namespace, with write access.\n\n\nOn your fork, you can develop and do changes as you wish. We recommend you to do your modifications in separate branches so that you can keep the original branches up to date with the original repository.\n\n\nIf you are not used to this kind of workflow, do not worry, everything is detailed below!\n\n\n\n\nFork Incipio\n\n\nNothing easier than that: go to the \nin6pio/Incipio repository\n and then clic on the \nfork\n button ;)\n\n\nFor more, check \nGitHub guide: forking projects\n.\n\n\n\n\nKeep your fork up to date\n\n\nFirst, clone your fork!\n\n\nHere it becomes a little bit trickier if you never did it. With your fork, you can do your changes as you like it will not affect the original repository. However, sometimes changes may happen on the original repository and you want to keep your fork up to date so that you can develop with the latest work. To achieve that, you have to configure the \ntracked repositories\n.\n\n\nTo see which repositories are tracked, use \ngit remote -v\n. The current result should be something like:\n\n\norigin  git@github.com:yourNameSpace/Incipio.git (fetch)\norigin  git@github.com:yourNameSpace/Incipio.git (push)\n\n\n\n\nNow, add the original repository to tracked repositories: \ngit remote add upstream git@github.com:in6pio/Incipio.git\n. Now if you do \ngit remote -v\n again you should have:\n\n\norigin  git@github.com:yourNameSpace/Incipio.git (fetch)\norigin  git@github.com:yourNameSpace/Incipio.git (push)\nupstream    git@github.com:in6pio/Incipio.git (fetch)\nupstream    git@github.com:in6pio/Incipio.git (push)\n\n\n\n\nThat's it! Now, if you wish to update your repository, you can do:\n\n\n\n\ngit fetch upstream\n: get the updates from the original repository.\n\n\ngit fetch origin\n: get the updates of your remote repository (the fork).\n\n\n\n\nSource: \nGitHub: syncing a fork\n\n\nDevelop\n\n\nIt is highly recommended to use the development environment provided to develop. If you want more information on it, check \nthis link\n.\n\n\nIf you wish to properly keep your fork up to date, do not touch the original branches like \nmaster\n!\n\n\nNow let's start. It is assumed that your repository is up to date. Create your branch \nfeatureName\n (the branch name has really no importance, you will be the only one to use it) from the \ndev\n branch:\n\n\ngit checkout origin/dev     # You are now on your remote branch `dev`\ngit checkout -b featureName # You are now on the branch featureName\n\n\n\n\nNow you can start to code. Do not forget to follow the \nproject contributing guidelines\n!\n\n\nSubmit your work\n\n\nIt is assumed that you have your latest work that you wish to submit pushed on the branch \nfeatureName\n on your fork. Before submitting your work, first check that your work following the project standards. Then, to clean your work, do not forget to \nrebase it first\n. Why? To ensure your work integrates the latests commits of the original repository and ease the merge! Never did that? Then do the following:\n\n\nGo on your branch \nfeatureName\n.\n\n\nUpdate your local repository:\n\n\ngit fetch upstream\ngit fetch origin\ngit pull featureName\n\n\n\n\nRebase your work:\n\n\ngit rebase upstream/dev\n\n\n\n\nSolve the conflicts, and only the conflicts, nothing else! To do so, check the conflicted files. Once this is done, do:\n\n\ngit add -A\ngit rebase --continue\n\n\n\n\nAnd to that until the rebase is successful :)\n\n\nNow repush your work. You will probably need to do a force push.\n\n\nGood! Now you can do a \npull request\n with the original repository on the \ndev\n branch (\nin6pio:dev\n) as a \nbase\n and your fork branch as \nHEAD\n (\nyourNameSpace:featureName\n).\n\n\nFor more\n\n\n\n\nLearn Git with pcottle\n\n\nBien utiliser \ngit merge\n et \ngit rebase\n\n\nGetting solid at \ngit rebase\n and \ngit merge\n\n\nHow to undo almost anything with Git\n\n\n\n\nLast be not the least, if you feel uncomfortable with Git in command lines, checkout:\n\n\n\n\nGit GUI clients\n\n\nungit\n\n\n\n\nGood coding!\n\n\nSources\n\n\n\n\nGit Workflows For Successful Deployment\n - Matt Surabian (\nbocoup\n) | May 07, 2015\n\n\nGit Best Practices: Workflow Guidelines\n - Andrew Berry (\nLullabot\n) | June 14, 2012\n\n\nGitHub Flow\n - Scott Chacon | August 31, 2011\n\n\nA successful Git branching model\n - Vincent Driessen | January 05, 2010\n\n\nPractical Git: A Workflow to Preserve Your Sanity\n - Keith D Gregory\n\n\nUnderstanding the Git Workflow\n - Ben Sandofsky\n\n\nGit Workflows That Work\n - Spencer Christensen | May 2, 2014\n\n\nGit branch strategy for small dev team\n - Bilal and Olga | March 11, 2010\n\n\nGit Branching - Branching Workflows\n - Git official doc\n\n\nComparing Workflows\n - \nAtlassian\n\n\nGit Workflow in Invenio\n - \nInvenio", 
             "title": "Git workflow"
         }, 
         {
-            "location": "/dev-guide/git-workflow/#git-workflow-triangular-workflow", 
-            "text": "You do not have the rights to directly write on the project. Hence if you wish to push some code, the best thing to do is to  fork  the project. Once done, you will have a copy of the the repository  in6pio/Incipio  to your own namespace, with write access.  On your fork, you can develop and do changes as you wish. We recommend you to do your modifications in separate branches so that you can keep the original branches up to date with the original repository.  If you are not used to this kind of workflow, do not worry, everything is detailed below!", 
-            "title": "Git Workflow: triangular workflow"
+            "location": "/dev-guide/git-workflow/#git-workflow", 
+            "text": "The Git process being used is commonly called triangular workflow. You do not have the rights to directly write on the project. Hence if you wish to push some code, the best thing to do is to  fork  the project. Once done, you will have a copy of the the repository  in6pio/Incipio  to your own namespace, with write access.  On your fork, you can develop and do changes as you wish. We recommend you to do your modifications in separate branches so that you can keep the original branches up to date with the original repository.  If you are not used to this kind of workflow, do not worry, everything is detailed below!", 
+            "title": "Git Workflow"
         }, 
         {
             "location": "/dev-guide/git-workflow/#fork-incipio", 
@@ -111,39 +161,14 @@
             "title": "Sources"
         }, 
         {
-            "location": "/dev-guide/dev-environment/", 
-            "text": "Development Environment\n\n\nThe purpose of this environment is to ease the development process. We preconfigured a Virtual Machine just for you. The only thing you have to do is to install the requirements and the deployment will be done with only one command. Of course, \nusing this development environment is by no means mandatory\n.\n\n\nRequirements\n\n\n\n\nVagrant\n\n\nAnsible\n\n\n\n\nGetting started\n\n\nInstall\n\n\n\n\nInstall the requirements\n\n\nInstall the Vagrant box: \nvagrant box add jessie http://static.gender-api.com/debian-8-jessie-rc2-x64-slim.box --provider virtualbox\n\n\nStart the Vagrant VM: \nvagrant up\n\n\n\n\nIf the provision fails, you can try to run ad hoc Ansible commands with a greater verbosity:\n\n\nansible-playbook -i .vagrant/machines/default/virtualbox/action_provision --private-key=~/.vagrant.d/insecure_private_key -u vagrant ansible/playbook.yml -vvvv\n\n\n\n\nUsage\n\n\n\n\nHTTP access: \nlocalhost:8080\n\n\nSSH access: \nvagrant ssh\n\n\nMySQL access:\n\n\nuser : \nroot\n\n\nno password\n\n\nremote access: specify \n127.0.0.1\n as host (port \n3307\n) (requires MySQL client)\n\n\n\n\n\n\nredis access:\n\n\nremote access allowed (requires redis client)\n\n\nhost: \n127.0.0.1\n\n\nport: \n6379\n\n\n\n\n\n\n\n\nIf you wish to reload configuration: \nvagrant provision\n\n\nIf you need to execute a root command, you can either use \nsudo\n or login as root the root user with \nsu\n (password:\n\nvagrant\n).\n\n\nIf you wish to change the port used because they overlap with already used ports or whatever your reason is, check\nthe configuration in the \nVagrantfile\n.\n\n\nDefault configuration\n\n\nThe VM container is configured via Ansible:\n\n\n\n\nLatest version of \nJessie\n (Debian 8)\n\n\nWget\n \n \ncURL\n\n\nnginx\n\n\nGit\n\n\n\n\nPHP Environment:\n\n\n\n\nPHP5.6\n\n\nPHP CLI\n\n\nPHP5 FPM\n\n\nPear\n\n\nComposer\n\n\nMcrypt\n\n\nXdebug\n\n\nPsySH\n\n\n\n\nDatabases:\n\n\n\n\nRedis\n\n\nMySQL\n\n\n\n\nGit:\n\n\n\n\nAliases\n\n\nDefault push method set to \ncurrent\n\n\nGlobal gitignore preconfigured to ignore \nlinux\n, \nintelliJ\n, \nNetBeans\n and \nEclipse\n files\n\n\nFor more: \ngit config --global --list\n\n\n\n\nShell aliases: run \nalias\n to see the available aliases.\n\n\nKnown bugs\n\n\nIt is possible that the update of the system and the composer install takes very long. For the later, you can drop the task and run it manually it usually takes less time and at least you have an idea of the progress. If you do so, you will have to run manually the tasks which have been configured after this command. Hopefully, it is just creating the database or updating it ;)", 
-            "title": "VM for dev"
+            "location": "/dev-guide/continuous-integration/", 
+            "text": "Continuous Integration", 
+            "title": "Continuous integration"
         }, 
         {
-            "location": "/dev-guide/dev-environment/#development-environment", 
-            "text": "The purpose of this environment is to ease the development process. We preconfigured a Virtual Machine just for you. The only thing you have to do is to install the requirements and the deployment will be done with only one command. Of course,  using this development environment is by no means mandatory .  Requirements   Vagrant  Ansible", 
-            "title": "Development Environment"
-        }, 
-        {
-            "location": "/dev-guide/dev-environment/#getting-started", 
+            "location": "/dev-guide/continuous-integration/#continuous-integration", 
             "text": "", 
-            "title": "Getting started"
-        }, 
-        {
-            "location": "/dev-guide/dev-environment/#install", 
-            "text": "Install the requirements  Install the Vagrant box:  vagrant box add jessie http://static.gender-api.com/debian-8-jessie-rc2-x64-slim.box --provider virtualbox  Start the Vagrant VM:  vagrant up   If the provision fails, you can try to run ad hoc Ansible commands with a greater verbosity:  ansible-playbook -i .vagrant/machines/default/virtualbox/action_provision --private-key=~/.vagrant.d/insecure_private_key -u vagrant ansible/playbook.yml -vvvv", 
-            "title": "Install"
-        }, 
-        {
-            "location": "/dev-guide/dev-environment/#usage", 
-            "text": "HTTP access:  localhost:8080  SSH access:  vagrant ssh  MySQL access:  user :  root  no password  remote access: specify  127.0.0.1  as host (port  3307 ) (requires MySQL client)    redis access:  remote access allowed (requires redis client)  host:  127.0.0.1  port:  6379     If you wish to reload configuration:  vagrant provision  If you need to execute a root command, you can either use  sudo  or login as root the root user with  su  (password: vagrant ).  If you wish to change the port used because they overlap with already used ports or whatever your reason is, check\nthe configuration in the  Vagrantfile .", 
-            "title": "Usage"
-        }, 
-        {
-            "location": "/dev-guide/dev-environment/#default-configuration", 
-            "text": "The VM container is configured via Ansible:   Latest version of  Jessie  (Debian 8)  Wget     cURL  nginx  Git   PHP Environment:   PHP5.6  PHP CLI  PHP5 FPM  Pear  Composer  Mcrypt  Xdebug  PsySH   Databases:   Redis  MySQL   Git:   Aliases  Default push method set to  current  Global gitignore preconfigured to ignore  linux ,  intelliJ ,  NetBeans  and  Eclipse  files  For more:  git config --global --list   Shell aliases: run  alias  to see the available aliases.", 
-            "title": "Default configuration"
-        }, 
-        {
-            "location": "/dev-guide/dev-environment/#known-bugs", 
-            "text": "It is possible that the update of the system and the composer install takes very long. For the later, you can drop the task and run it manually it usually takes less time and at least you have an idea of the progress. If you do so, you will have to run manually the tasks which have been configured after this command. Hopefully, it is just creating the database or updating it ;)", 
-            "title": "Known bugs"
+            "title": "Continuous Integration"
         }, 
         {
             "location": "/dev-guide/dev-tools/", 
@@ -211,24 +236,14 @@
             "title": "Fields validation"
         }, 
         {
-            "location": "/dev-guide/documentation/", 
-            "text": "Contributing to the documentation\n\n\nOne of the essential principle of incipio is that \nDocumetation is as important as code\n. Incipio should be easy to use, to learn and to contribute.\n\n\n\n\nYou sould considere that Incipio is written using \nmarkdown synthax\n\n\nIncipio documentation is hosted on \nGitHub\n\n\nIncipo documentation used \nMkdocs\n to generate the static web site\n\n\nIncipio documentation is published under a specific branch \ngh-pages\n as a GitHub hosted website\n\n\n\n\nInstall and use Mkdocs\n\n\nInstall Mkdocs\n\n\nMkDocs need Python installed on yours system and \npip (Python package manager)\n\n\n\n\nInstall Mkdocs\n\n\n\n\npip install mkdocs\n\n\n\n\n\n\nRun Mkdocs\n\n\n\n\nmkdocs serve\n\n\n\n\nOpen up \nhttp://127.0.0.1:8000/\n in your browser, and you'll see the index page being displayed\n\n\nAdding pages\n\n\n\n\nCreate your \n*.md\n in the \ndocs/user-guide\n or \ndocs/dev-guide\n folder\n\n\nEdit \ndocs/index.md\n to add your documantation to the table of content\n\n\nEdit \nmkdocs.yml\n if you want to include your page to the navigation header\n\n\n\n\nDocumention workflow\n\n\nDocumentation contribution is based on github. See \nGit workflow\n.\nIt's great if your push code and documentation together.\n\n\nThis is a small reminder :\n\n\n\n\nforked the official repository\n\n\nClone the forked \nIncipio/master\n repository to your local machine\n\n\n\n\ngit clone https://github.com/\nYOUR GITHUB USERNAME\n/Incipio/master.git\n\n\n\n\n\n\nCreate a dedicated new branch for your changes.\n\n\n\n\ngit checkout -b improve_doc\n\n\n\n\n\n\nContribute to the documentation (and code).\n\n\nPush the changes to your forked repository.\n\n\n\n\ngit add .\ngit commit -m \nYOUR MESSAGE\n\ngit push origin improve_doc\n\n\n\n\n\n\nNow, initiate a pull request\n\n\n\n\nGo to your forked repository and click on the Pull Requests link", 
-            "title": "Document your work"
+            "location": "/dev-guide/project-documentation/", 
+            "text": "Project documentation\n\n\nIncipio documentation is generated with \nMkdocs\n. To contribute to the documentation, you will find everything inside the \ndocs\n folder and the configuration in \nmkdocs.yml\n.\n\n\nMkdocs\n is builded using Python. As such to run it locally you will have to check \nMkdocs installation process\n. It is pre-installed with the Vagrant VM, to use it, check the \nmkdocs\n command.\n\n\nTo start to see the doc, run \nmkdocs serve\n in the project folder.", 
+            "title": "Project documentation"
         }, 
         {
-            "location": "/dev-guide/documentation/#contributing-to-the-documentation", 
-            "text": "One of the essential principle of incipio is that  Documetation is as important as code . Incipio should be easy to use, to learn and to contribute.   You sould considere that Incipio is written using  markdown synthax  Incipio documentation is hosted on  GitHub  Incipo documentation used  Mkdocs  to generate the static web site  Incipio documentation is published under a specific branch  gh-pages  as a GitHub hosted website", 
-            "title": "Contributing to the documentation"
-        }, 
-        {
-            "location": "/dev-guide/documentation/#install-and-use-mkdocs", 
-            "text": "Install Mkdocs  MkDocs need Python installed on yours system and  pip (Python package manager)   Install Mkdocs   pip install mkdocs   Run Mkdocs   mkdocs serve  Open up  http://127.0.0.1:8000/  in your browser, and you'll see the index page being displayed  Adding pages   Create your  *.md  in the  docs/user-guide  or  docs/dev-guide  folder  Edit  docs/index.md  to add your documantation to the table of content  Edit  mkdocs.yml  if you want to include your page to the navigation header", 
-            "title": "Install and use Mkdocs"
-        }, 
-        {
-            "location": "/dev-guide/documentation/#documention-workflow", 
-            "text": "Documentation contribution is based on github. See  Git workflow .\nIt's great if your push code and documentation together.  This is a small reminder :   forked the official repository  Clone the forked  Incipio/master  repository to your local machine   git clone https://github.com/ YOUR GITHUB USERNAME /Incipio/master.git   Create a dedicated new branch for your changes.   git checkout -b improve_doc   Contribute to the documentation (and code).  Push the changes to your forked repository.   git add .\ngit commit -m  YOUR MESSAGE \ngit push origin improve_doc   Now, initiate a pull request   Go to your forked repository and click on the Pull Requests link", 
-            "title": "Documention workflow"
+            "location": "/dev-guide/project-documentation/#project-documentation", 
+            "text": "Incipio documentation is generated with  Mkdocs . To contribute to the documentation, you will find everything inside the  docs  folder and the configuration in  mkdocs.yml .  Mkdocs  is builded using Python. As such to run it locally you will have to check  Mkdocs installation process . It is pre-installed with the Vagrant VM, to use it, check the  mkdocs  command.  To start to see the doc, run  mkdocs serve  in the project folder.", 
+            "title": "Project documentation"
         }, 
         {
             "location": "/about/", 

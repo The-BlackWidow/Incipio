@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="http://in6pio.github.io/Incipio/dev-guide/dev-environment/">
+        <link rel="canonical" href="https://in6pio.github.io/Incipio/dev-guide/dev-environment/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>VM for dev - Incipio Docs</title>
+	<title>Getting started - Incipio Docs</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -81,12 +81,16 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guide développeur <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
+                        <li class="active">
+                            <a href="./">Getting started</a>
+                        </li>
+                    
                         <li >
                             <a href="../git-workflow/">Git workflow</a>
                         </li>
                     
-                        <li class="active">
-                            <a href="./">VM for dev</a>
+                        <li >
+                            <a href="../continuous-integration/">Continuous integration</a>
                         </li>
                     
                         <li >
@@ -102,7 +106,7 @@
                         </li>
                     
                         <li >
-                            <a href="../documentation/">Document your work</a>
+                            <a href="../project-documentation/">Project documentation</a>
                         </li>
                     
                     </ul>
@@ -120,12 +124,12 @@
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
                 <li >
-                    <a rel="next" href="../git-workflow/">
+                    <a rel="next" href="../../user-guide/user-management/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../dev-tools/">
+                    <a rel="prev" href="../git-workflow/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -181,7 +185,7 @@
 <h2 id="install">Install</h2>
 <ul>
 <li>Install the requirements</li>
-<li>Install the Vagrant box: <code>vagrant box add jessie http://static.gender-api.com/debian-8-jessie-rc2-x64-slim.box --provider virtualbox</code></li>
+<li>Clone the project and go inside the project folder with your console</li>
 <li>Start the Vagrant VM: <code>vagrant up</code></li>
 </ul>
 <p>If the provision fails, you can try to run ad hoc Ansible commands with a greater verbosity:</p>

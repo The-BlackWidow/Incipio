@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="http://in6pio.github.io/Incipio/dev-guide/git-workflow/">
+        <link rel="canonical" href="https://in6pio.github.io/Incipio/dev-guide/git-workflow/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
 	<title>Git workflow - Incipio Docs</title>
@@ -81,12 +81,16 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guide développeur <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
+                        <li >
+                            <a href="../dev-environment/">Getting started</a>
+                        </li>
+                    
                         <li class="active">
                             <a href="./">Git workflow</a>
                         </li>
                     
                         <li >
-                            <a href="../dev-environment/">VM for dev</a>
+                            <a href="../continuous-integration/">Continuous integration</a>
                         </li>
                     
                         <li >
@@ -102,7 +106,7 @@
                         </li>
                     
                         <li >
-                            <a href="../documentation/">Document your work</a>
+                            <a href="../project-documentation/">Project documentation</a>
                         </li>
                     
                     </ul>
@@ -120,12 +124,12 @@
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
                 <li >
-                    <a rel="next" href="../../user-guide/user-management/">
+                    <a rel="next" href="../dev-environment/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../dev-environment/">
+                    <a rel="prev" href="../continuous-integration/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -148,7 +152,7 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#git-workflow-triangular-workflow">Git Workflow: triangular workflow</a></li>
+        <li class="main active"><a href="#git-workflow">Git Workflow</a></li>
         
             <li><a href="#fork-incipio">Fork Incipio</a></li>
         
@@ -167,8 +171,8 @@
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="git-workflow-triangular-workflow">Git Workflow: triangular workflow</h1>
-<p>You do not have the rights to directly write on the project. Hence if you wish to push some code, the best thing to do is to <strong>fork</strong> the project. Once done, you will have a copy of the the repository <a href="https://github.com/in6pio/Incipio">in6pio/Incipio</a> to your own namespace, with write access.</p>
+<h1 id="git-workflow">Git Workflow</h1>
+<p>The Git process being used is commonly called triangular workflow. You do not have the rights to directly write on the project. Hence if you wish to push some code, the best thing to do is to <strong>fork</strong> the project. Once done, you will have a copy of the the repository <a href="https://github.com/in6pio/Incipio">in6pio/Incipio</a> to your own namespace, with write access.</p>
 <p>On your fork, you can develop and do changes as you wish. We recommend you to do your modifications in separate branches so that you can keep the original branches up to date with the original repository.</p>
 <p>If you are not used to this kind of workflow, do not worry, everything is detailed below!</p>
 <p><img src="https://cloud.githubusercontent.com/assets/1319791/8943755/5dcdcae4-354a-11e5-9f82-915914fad4f7.png" alt="Triangular workflow" title="Triangular workflow" height="auto" width="100%"></p>
