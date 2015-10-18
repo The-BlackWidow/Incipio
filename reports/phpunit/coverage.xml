@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1445167371">
-  <project timestamp="1445167371">
+<coverage generated="1445177858">
+  <project timestamp="1445177858">
     <package name="ApiBundle">
       <file name="/home/travis/build/in6pio/Incipio/src/ApiBundle/ApiBundle.php">
         <class name="ApiBundle" namespace="ApiBundle">
