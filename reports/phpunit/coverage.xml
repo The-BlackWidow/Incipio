@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1445178395">
-  <project timestamp="1445178395">
+<coverage generated="1445179793">
+  <project timestamp="1445179793">
     <package name="ApiBundle">
       <file name="/home/travis/build/in6pio/Incipio/src/ApiBundle/ApiBundle.php">
         <class name="ApiBundle" namespace="ApiBundle">
@@ -221,109 +221,6 @@
         <metrics loc="69" ncloc="36" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="12" elements="16" coveredelements="14"/>
       </file>
     </package>
-    <package name="ApiBundle\Doctrine\ORM\Manager">
-      <file name="/home/travis/build/in6pio/Incipio/src/ApiBundle/Doctrine/ORM/Manager/JobNonPersistentManager.php">
-        <class name="JobNonPersistentManager" namespace="ApiBundle\Doctrine\ORM\Manager">
-          <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="20" elements="24" coveredelements="24"/>
-        </class>
-        <line num="26" type="method" name="remove" crap="1" count="7"/>
-        <line num="28" type="stmt" count="7"/>
-        <line num="35" type="method" name="update" crap="1" count="8"/>
-        <line num="37" type="stmt" count="8"/>
-        <line num="38" type="stmt" count="8"/>
-        <line num="43" type="method" name="supports" crap="2" count="4"/>
-        <line num="45" type="stmt" count="4"/>
-        <line num="46" type="stmt" count="4"/>
-        <line num="49" type="stmt" count="1"/>
-        <line num="58" type="method" name="updateAbbreviation" crap="5" count="8"/>
-        <line num="60" type="stmt" count="8"/>
-        <line num="61" type="stmt" count="8"/>
-        <line num="62" type="stmt" count="8"/>
-        <line num="63" type="stmt" count="4"/>
-        <line num="66" type="stmt" count="4"/>
-        <line num="67" type="stmt" count="4"/>
-        <line num="69" type="stmt" count="4"/>
-        <line num="70" type="stmt" count="1"/>
-        <line num="71" type="stmt" count="1"/>
-        <line num="72" type="stmt" count="3"/>
-        <line num="73" type="stmt" count="3"/>
-        <line num="74" type="stmt" count="3"/>
-        <line num="77" type="stmt" count="4"/>
-        <line num="78" type="stmt" count="4"/>
-        <metrics loc="79" ncloc="49" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="20" elements="24" coveredelements="24"/>
-      </file>
-      <file name="/home/travis/build/in6pio/Incipio/src/ApiBundle/Doctrine/ORM/Manager/MandateNonPersistentManager.php">
-        <class name="MandateNonPersistentManager" namespace="ApiBundle\Doctrine\ORM\Manager">
-          <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="25" coveredelements="25"/>
-        </class>
-        <line num="26" type="method" name="remove" crap="2" count="2"/>
-        <line num="28" type="stmt" count="2"/>
-        <line num="29" type="stmt" count="2"/>
-        <line num="30" type="stmt" count="2"/>
-        <line num="31" type="stmt" count="2"/>
-        <line num="38" type="method" name="update" crap="1" count="10"/>
-        <line num="40" type="stmt" count="10"/>
-        <line num="41" type="stmt" count="10"/>
-        <line num="46" type="method" name="supports" crap="2" count="4"/>
-        <line num="48" type="stmt" count="4"/>
-        <line num="49" type="stmt" count="4"/>
-        <line num="52" type="stmt" count="1"/>
-        <line num="60" type="method" name="updateName" crap="5" count="9"/>
-        <line num="62" type="stmt" count="9"/>
-        <line num="63" type="stmt" count="9"/>
-        <line num="64" type="stmt" count="9"/>
-        <line num="65" type="stmt" count="5"/>
-        <line num="68" type="stmt" count="4"/>
-        <line num="69" type="stmt" count="4"/>
-        <line num="70" type="stmt" count="4"/>
-        <line num="71" type="stmt" count="2"/>
-        <line num="72" type="stmt" count="2"/>
-        <line num="73" type="stmt" count="2"/>
-        <line num="76" type="stmt" count="4"/>
-        <line num="77" type="stmt" count="4"/>
-        <metrics loc="78" ncloc="49" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="25" coveredelements="25"/>
-      </file>
-      <file name="/home/travis/build/in6pio/Incipio/src/ApiBundle/Doctrine/ORM/Manager/UserManager.php">
-        <class name="UserManager" namespace="ApiBundle\Doctrine\ORM\Manager">
-          <metrics methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="25" elements="31" coveredelements="31"/>
-        </class>
-        <line num="28" type="method" name="remove" crap="1" count="1"/>
-        <line num="30" type="stmt" count="1"/>
-        <line num="31" type="stmt" count="1"/>
-        <line num="38" type="method" name="update" crap="1" count="1"/>
-        <line num="40" type="stmt" count="1"/>
-        <line num="41" type="stmt" count="1"/>
-        <line num="46" type="method" name="supports" crap="2" count="1"/>
-        <line num="48" type="stmt" count="1"/>
-        <line num="49" type="stmt" count="1"/>
-        <line num="51" type="stmt" count="1"/>
-        <line num="54" type="stmt" count="1"/>
-        <line num="60" type="method" name="deleteUser" crap="3" count="2"/>
-        <line num="63" type="stmt" count="2"/>
-        <line num="64" type="stmt" count="2"/>
-        <line num="65" type="stmt" count="2"/>
-        <line num="66" type="stmt" count="2"/>
-        <line num="67" type="stmt" count="2"/>
-        <line num="68" type="stmt" count="2"/>
-        <line num="69" type="stmt" count="2"/>
-        <line num="74" type="method" name="updateCanonicalFields" crap="2" count="3"/>
-        <line num="76" type="stmt" count="3"/>
-        <line num="78" type="stmt" count="3"/>
-        <line num="79" type="stmt" count="3"/>
-        <line num="80" type="stmt" count="3"/>
-        <line num="81" type="stmt" count="3"/>
-        <line num="86" type="method" name="updateUser" crap="2" count="1"/>
-        <line num="89" type="stmt" count="1"/>
-        <line num="90" type="stmt" count="1"/>
-        <line num="91" type="stmt" count="1"/>
-        <line num="94" type="stmt" count="1"/>
-        <line num="95" type="stmt" count="1"/>
-        <metrics loc="96" ncloc="57" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="25" elements="31" coveredelements="31"/>
-      </file>
-    </package>
-    <file name="/home/travis/build/in6pio/Incipio/src/ApiBundle/Doctrine/ORM/Manager/NonPersistentEntityManagerInterface.php">
-      <metrics loc="44" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
-    </file>
     <package name="ApiBundle\Entity">
       <file name="/home/travis/build/in6pio/Incipio/src/ApiBundle/Entity/Address.php">
         <class name="Address" namespace="ApiBundle\Entity">
@@ -622,6 +519,109 @@
         <metrics loc="54" ncloc="35" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="13" coveredelements="13"/>
       </file>
     </package>
+    <package name="ApiBundle\Manager">
+      <file name="/home/travis/build/in6pio/Incipio/src/ApiBundle/Manager/JobManager.php">
+        <class name="JobManager" namespace="ApiBundle\Manager">
+          <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="20" elements="24" coveredelements="24"/>
+        </class>
+        <line num="26" type="method" name="remove" crap="1" count="7"/>
+        <line num="28" type="stmt" count="7"/>
+        <line num="35" type="method" name="update" crap="1" count="8"/>
+        <line num="37" type="stmt" count="8"/>
+        <line num="38" type="stmt" count="8"/>
+        <line num="43" type="method" name="supports" crap="2" count="4"/>
+        <line num="45" type="stmt" count="4"/>
+        <line num="46" type="stmt" count="4"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="58" type="method" name="updateAbbreviation" crap="5" count="8"/>
+        <line num="60" type="stmt" count="8"/>
+        <line num="61" type="stmt" count="8"/>
+        <line num="62" type="stmt" count="8"/>
+        <line num="63" type="stmt" count="4"/>
+        <line num="66" type="stmt" count="4"/>
+        <line num="67" type="stmt" count="4"/>
+        <line num="69" type="stmt" count="4"/>
+        <line num="70" type="stmt" count="1"/>
+        <line num="71" type="stmt" count="1"/>
+        <line num="72" type="stmt" count="3"/>
+        <line num="73" type="stmt" count="3"/>
+        <line num="74" type="stmt" count="3"/>
+        <line num="77" type="stmt" count="4"/>
+        <line num="78" type="stmt" count="4"/>
+        <metrics loc="79" ncloc="49" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="20" elements="24" coveredelements="24"/>
+      </file>
+      <file name="/home/travis/build/in6pio/Incipio/src/ApiBundle/Manager/MandateManager.php">
+        <class name="MandateManager" namespace="ApiBundle\Manager">
+          <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="25" coveredelements="25"/>
+        </class>
+        <line num="26" type="method" name="remove" crap="2" count="2"/>
+        <line num="28" type="stmt" count="2"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="30" type="stmt" count="2"/>
+        <line num="31" type="stmt" count="2"/>
+        <line num="38" type="method" name="update" crap="1" count="10"/>
+        <line num="40" type="stmt" count="10"/>
+        <line num="41" type="stmt" count="10"/>
+        <line num="46" type="method" name="supports" crap="2" count="4"/>
+        <line num="48" type="stmt" count="4"/>
+        <line num="49" type="stmt" count="4"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="60" type="method" name="updateName" crap="5" count="9"/>
+        <line num="62" type="stmt" count="9"/>
+        <line num="63" type="stmt" count="9"/>
+        <line num="64" type="stmt" count="9"/>
+        <line num="65" type="stmt" count="5"/>
+        <line num="68" type="stmt" count="4"/>
+        <line num="69" type="stmt" count="4"/>
+        <line num="70" type="stmt" count="4"/>
+        <line num="71" type="stmt" count="2"/>
+        <line num="72" type="stmt" count="2"/>
+        <line num="73" type="stmt" count="2"/>
+        <line num="76" type="stmt" count="4"/>
+        <line num="77" type="stmt" count="4"/>
+        <metrics loc="78" ncloc="49" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="25" coveredelements="25"/>
+      </file>
+      <file name="/home/travis/build/in6pio/Incipio/src/ApiBundle/Manager/UserManager.php">
+        <class name="UserManager" namespace="ApiBundle\Manager">
+          <metrics methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="25" elements="31" coveredelements="31"/>
+        </class>
+        <line num="28" type="method" name="remove" crap="1" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <line num="38" type="method" name="update" crap="1" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="46" type="method" name="supports" crap="2" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="54" type="stmt" count="1"/>
+        <line num="60" type="method" name="deleteUser" crap="3" count="2"/>
+        <line num="63" type="stmt" count="2"/>
+        <line num="64" type="stmt" count="2"/>
+        <line num="65" type="stmt" count="2"/>
+        <line num="66" type="stmt" count="2"/>
+        <line num="67" type="stmt" count="2"/>
+        <line num="68" type="stmt" count="2"/>
+        <line num="69" type="stmt" count="2"/>
+        <line num="74" type="method" name="updateCanonicalFields" crap="2" count="3"/>
+        <line num="76" type="stmt" count="3"/>
+        <line num="78" type="stmt" count="3"/>
+        <line num="79" type="stmt" count="3"/>
+        <line num="80" type="stmt" count="3"/>
+        <line num="81" type="stmt" count="3"/>
+        <line num="86" type="method" name="updateUser" crap="2" count="1"/>
+        <line num="89" type="stmt" count="1"/>
+        <line num="90" type="stmt" count="1"/>
+        <line num="91" type="stmt" count="1"/>
+        <line num="94" type="stmt" count="1"/>
+        <line num="95" type="stmt" count="1"/>
+        <metrics loc="96" ncloc="57" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="25" elements="31" coveredelements="31"/>
+      </file>
+    </package>
+    <file name="/home/travis/build/in6pio/Incipio/src/ApiBundle/Manager/NonPersistentEntityManagerInterface.php">
+      <metrics loc="44" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
     <package name="ApiBundle\Utils">
       <file name="/home/travis/build/in6pio/Incipio/src/ApiBundle/Utils/UserRoles.php">
         <class name="UserRoles" namespace="ApiBundle\Utils">
