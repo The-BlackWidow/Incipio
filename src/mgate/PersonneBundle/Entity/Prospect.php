@@ -78,6 +78,13 @@ class Prospect
      */
     private $adresse;
 
+        /**
+        *@var date
+        *
+        *@ORM\Column(name="dateajout", type="date",nullable=true)
+        */
+     private $dateajout;
+        
     /**
      * Get id
      *
